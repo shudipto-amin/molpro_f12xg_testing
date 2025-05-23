@@ -1,0 +1,14 @@
+memory,200,m
+gprint,orbitals
+
+geometry={Ne}
+basis={
+  default,aug-cc-pVDZ
+  set,mygem
+     s, ne, 0.19532, 0.81920, 2.85917, 9.50073,35.69989,197.79328   
+     c,1.6, 0.27070, 0.30552, 0.18297, 0.10986, 0.06810,  0.04224
+}                                                        
+
+{df-hf}
+{df-mp2}
+{df-mp2-f12,gem_basis=mygem} 

@@ -1,0 +1,9 @@
+# Output files
+*.out
+*.xml
+j-*.o*
+tensor*.txt
+
+# Python extras
+.ipynb_checkpoints/
+
