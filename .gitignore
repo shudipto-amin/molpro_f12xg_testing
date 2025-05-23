@@ -3,7 +3,9 @@
 *.xml
 j-*.o*
 tensor*.txt
+outputs/
 
 # Python extras
 .ipynb_checkpoints/
-
+__pycache__/
+.virtual_documents/
