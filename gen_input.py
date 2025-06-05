@@ -19,26 +19,24 @@ basis={
 """
 
 template['original'] = """
-ANSATZ={ansatz}
 
 {{df-hf}}
 {{df-mp2}}
-{{df-mp2-f12,gem_basis=mygem}}
+{{df-mp2-f12,gem_basis=mygem,ANSATZ={ansatz}}}
 """
 
 template['cpproute'] = """
-ANSATZ={ansatz}
 
 {{df-hf}}
 {{df-mp2}}
-{{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-F12'}}
+{{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-F12',ANSATZ={ansatz}}}
 """
 
 template['xg'] = """
 
-{df-hf}
-{df-mp2}
-{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-XG'}
+{{df-hf}}
+{{df-mp2}}
+{{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-XG'}}
 """
 
 outdir = "outputs/"
@@ -68,9 +66,10 @@ if __name__ == "__main__":
         
     for ansatz in ansatzes:
         for key in template:
-            if key in ('common', 'xg'): continue
+            if key in ('common'): continue
             print("="*50)
             fname = generate_fname(key, ansatz)
+            print(fname)
             input_script = generate_input(key, ansatz)
 
             with open(fname, 'w') as out:
