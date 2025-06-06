@@ -4,9 +4,9 @@
 j-*.o*
 tensor*.txt
 outputs/
+outputs_prev/
 
 # Python extras
 .ipynb_checkpoints/
 __pycache__/
 .virtual_documents/
-outputs_prev/
