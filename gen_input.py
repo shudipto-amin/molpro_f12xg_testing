@@ -53,10 +53,15 @@ def generate_fname(temp_key, ansatz):
     return fname
     
 def generate_input(temp_key, ansatz):
-    return template['common'] + template[temp_key].format(ansatz=ansatz)         
-    
+    input_script = template['common'] + \
+    template[temp_key].format(ansatz=ansatz)         
+    if ansatz == 'default':
+        input_script.replace(",ANSATZ=default", "")
+
+    return input_script
+        
 ansatzes = [
-    "3C(FIX)", "3*C(FIX)", "3C(FIX,HY1)"
+    "3C(FIX,NOZ)", "3*C(FIX,NOZ)", "3C(FIX,HY1,NOZ)",# "default"
 ]
 
 if __name__ == "__main__":

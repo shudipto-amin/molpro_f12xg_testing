@@ -7,8 +7,7 @@ import gen_input as gi
 import pandas as pd
 import re
 from functools import reduce
-parser = argparse.ArgumentParser()
-parser.parse_args()
+
 
 def get_files_matching(rexpr):
 
@@ -123,7 +122,8 @@ def get_outfile(ansatz, key):
         #print(rexpr)
         matching_files = sorted(get_files_matching(rexpr))
         #print( matching_files)
-        return matching_files[0]
+        assert matching_files, f"{ansatz}, {key} combo returns no matches."
+        return matching_files[-1] # get latest with -1
     
 def get_output_files(ansatzes, template_keys):
     outfiles = []
@@ -135,6 +135,9 @@ def get_output_files(ansatzes, template_keys):
     return outfiles
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.parse_args()
+    
     criteria_dict=[
                 ('name', 'total energy'),
                 ('name', 'correlation energy'),
