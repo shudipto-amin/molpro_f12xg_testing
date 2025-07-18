@@ -1,0 +1,14 @@
+geometry={cu}
+basis=awcvtz
+gem_beta=[0.8,1,1.2,1.6,1.8,2.0,2.2,2.4]
+hf
+do i=1
+{mp2-f12,gem_beta=gem_beta(i);core,mixed} # can put in array for ge_beta for mixed gammas:q
+enddo
+{table,gem_beta,eplot,file=cu_vs_beta.plot}
+
+
+
+
+
+

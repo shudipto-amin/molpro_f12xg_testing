@@ -1,7 +1,13 @@
 memory,200,m
 gprint,orbitals
 
-geometry={Ne}
+geometry={
+  angstrom;
+  he1;
+  he2, he1, 1.74;
+}
+
+
 basis=aug-cc-pVDZ
 
 {df-hf}

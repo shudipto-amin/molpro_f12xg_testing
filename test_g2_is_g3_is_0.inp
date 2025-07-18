@@ -1,0 +1,9 @@
+memory,200,m
+gprint,orbitals
+
+geometry={Ne}
+basis=aug-cc-pVDZ
+
+{df-hf}
+{df-mp2}
+{df-mp2-f12,cpp_prog='DF-MP2-XG',ANSATZ='/home/linux3_i1/amin/f12xg_inputs/expfile_g2_is_g3_is_0.txt'}

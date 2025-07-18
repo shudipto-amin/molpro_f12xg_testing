@@ -1,0 +1,9 @@
+memory,200,m
+gprint,orbitals
+
+geometry={Cu}
+basis=aug-cc-pVDZ
+
+{df-hf}
+{df-mp2}
+{df-mp2-f12,cpp_prog='DF-MP2-XG'} 
