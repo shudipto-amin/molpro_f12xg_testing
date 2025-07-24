@@ -1,0 +1,15 @@
+memory,2000,m
+gprint,orbitals
+
+geometry={
+  angstrom;
+  na;
+  cl, na, 2.36;
+}
+
+
+basis=cc-pVDZ
+
+{df-hf}
+{df-mp2}
+{df-mp2-f12,cpp_prog='DF-MP2-XG',ANSATZ='/home/linux3_i1/amin/f12xg_inputs/expfile_1.30_1.30_1.30.txt'}
