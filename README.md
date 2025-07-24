@@ -3,9 +3,17 @@
 This repo is for developing test routines for [F12-XG implementation](https://github.com/ak-ustutt/molpro/issues/1) in Molpro
 
 ## Scripts
-`gen_input.py` : Generates molpro input files for various ansatzes and codebases (writes to `outputs/`)
+`test_molpro_dev/gen_input.py` : Generates molpro input files for various ansatzes and codebases (writes to `outputs/`)
 
-`analyze_outputs.py` : Analyzes outputs generated from generated input files above.
+`test_molpro_dev/analyze_outputs.py` : Analyzes outputs generated from generated input files above.
+
+`test_molpro_dev/optimize_gamma_by_element/gen_input.py` : Generates input file content based on atom name, gammas, etc
+
+`test_molpro_dev/optimize_gamma_by_element/plot.ipynb` : Plots E vs gamma
+
+`test_molpro_dev/optimize_gamma_by_element/multi_inputs.sh` : Generates (using `gen_input.py` in same folder) many input files based on atom, basis, into the `outputs/` folder
+
+`test_molpro_dev/f12xg_inputs/generate_gauss_from_gamma.ipynb` : Write Expfile.
 
 ## Reference files (!!Need to add!!)
 
