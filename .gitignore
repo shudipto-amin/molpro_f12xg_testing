@@ -1,10 +1,15 @@
 # Output files
 *.out
+!f12xg_inputs/betas_for_H.out
 *.xml
 j-*.o*
+*.log
 tensor*.txt
 outputs/
 outputs_prev/
+
+*f12xg_inputs/*.txt
+!f12xg_inputs/expfile_1.00_1.50_1.25.txt
 
 # Python extras
 .ipynb_checkpoints/
