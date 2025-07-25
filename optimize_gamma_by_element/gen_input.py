@@ -21,7 +21,7 @@ set,charge={charge}
 basis={basis}
 gem_beta={beta_str}
 {{df-hf}}
-{{df-mp2}}
+{{df-mp2;core,mixed}}
 do i=1, #gem_beta
 {{df-mp2-f12,gem_beta=[gem_beta(i)];core,mixed}}
 e(i)=energy-energr
