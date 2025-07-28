@@ -2,6 +2,23 @@
 
 This repo is for developing test routines for [F12-XG implementation](https://github.com/ak-ustutt/molpro/issues/1) in Molpro
 
+## Current Development goals:
+
+- [ ] Determine **optimal** gammas of an array individual elements. Folder: `/optimize_gamma_by_element`
+   - [ ] Workflow for generating different data for single elements
+   - [ ] Make tables of optimal gamma by element and basis set; expand `/optimize_gamma_by_element/plot.ipynb`
+- [ ] Run XG on a system containing two such different gammas
+   - [ ] Finish [creating energy comparison workflow](https://github.com/shudipto-amin/molpro_f12xg_testing/issues/2)
+   - [ ] Run variations on NaCl, or NH3, or ZnH2, or any closed shell from the paper on core/valence specific gammas.
+- [ ] Get accurate reference energy of the dimer systems
+   - [ ] Option A: large basis set, or
+   - [ ] Option B: extrapolate from several basis set sizes.
+- [ ] Compare XG with reference energy to see whether or not different gamma implementation (by atom) has made any improvements toward the "accurate" energy. 
+
+## Practical sub-goals
+- [ ] Analyze sizes of F12 tensors from output file and tabulate
+- [ ] Analyze largest contribution from log file  by sorting
+
 ## Scripts
 `test_molpro_dev/gen_input.py` : Generates molpro input files for various ansatzes and codebases (writes to `outputs/`)
 
