@@ -36,7 +36,7 @@ template['xg'] = """
 
 {{df-hf}}
 {{df-mp2}}
-{{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-XG',ANSATZ='/home/linux3_i1/amin/f12xg_inputs/expfile_all_same.txt'}
+{{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-XG',ANSATZ='/home/linux3_i1/amin/f12xg_inputs/expfile_all_same.txt'}}
 """
 
 outdir = "outputs/"
