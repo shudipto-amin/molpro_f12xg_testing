@@ -1,9 +1,0 @@
-memory,200,m        ! allocate 200 MW of memory
-gprint,orbitals     ! global print option: print orbitals of all methods
-
-basis=aug-cc-pVDZ     ! basis set provided by argument
-
-geometry={ne}
-
-df-hf                  ! Hartree-Fock calculation
-df-mp2-f12
