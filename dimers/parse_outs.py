@@ -9,7 +9,7 @@ import os
 parser = ap.ArgumentParser()
 
 parser.add_argument('--outs', '-o', nargs='+',
-                    help='standard molpro output files')
+                    help='default or standard molpro output files')
 parser.add_argument('--xgouts', '-x', nargs='+',
                     help='XG molpro output files')
 
