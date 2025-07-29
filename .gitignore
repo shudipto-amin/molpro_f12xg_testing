@@ -5,12 +5,15 @@
 *.xml
 j-*.o*
 *.log
-tensor*.txt
 outputs/
 outputs_prev/
 
+# Generated files
+tensor*.txt
 *f12xg_inputs/*.txt
 !f12xg_inputs/expfile_1.00_1.50_1.25.txt
+
+__input.tmp
 
 # Python extras
 .ipynb_checkpoints/
