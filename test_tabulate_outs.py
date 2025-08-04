@@ -1,4 +1,4 @@
-import parse_outs as PO
+import tabulate_outs as TO
 import os
 
 test_dir = "test_outs/"
@@ -8,7 +8,7 @@ outfiles = [
 
 
 def check_pass_fail(out, *args, **kwargs):
-    ener = PO.get_ener(out, *args, **kwargs)
+    ener = TO.get_ener(out, *args, **kwargs)
     if 'PASS' in out:
         assert isinstance(ener, float), f"{out} should PASS" 
     elif 'FAIL' in out:
