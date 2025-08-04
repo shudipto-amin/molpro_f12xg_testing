@@ -6,7 +6,12 @@ import sys
 import pandas as pd
 import os
 
-parser = ap.ArgumentParser()
+parser = ap.ArgumentParser(
+    description="""
+    This script takes in multiple output files and prints out a
+    table (pandas.DataFrame) of energies per output file. 
+    """,
+        )
 
 parser.add_argument('--outs', '-o', nargs='+',
                     help='default or standard molpro output files')
