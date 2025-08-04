@@ -10,6 +10,10 @@ parser = ap.ArgumentParser(
     description="""
     This script takes in multiple output files and prints out a
     table (pandas.DataFrame) of energies per output file. 
+
+    RESTRICTIONS:
+    * Output files MUST only be for a single point energy.
+    * They should work with the `get_*_energy.sh`
     """,
         )
 
