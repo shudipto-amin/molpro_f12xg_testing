@@ -5,6 +5,7 @@ import subprocess as sp
 import sys
 import pandas as pd
 import os
+import xml_output_parser as xop 
 
 parser = ap.ArgumentParser(
     description="""
@@ -14,11 +15,12 @@ parser = ap.ArgumentParser(
     RESTRICTIONS:
     * Output files MUST only be for a single point energy.
     * They should work with the `get_*_energy.sh`
+    * For standard and default, must be XML output.
     """,
         )
 
 parser.add_argument('--outs', '-o', nargs='+',
-                    help='default or standard molpro output files')
+                    help='default or standard molpro XML output files')
 parser.add_argument('--xgouts', '-x', nargs='+',
                     help='XG molpro output files')
 
@@ -27,21 +29,25 @@ def ener_not_found_error(outfile):
 
 def get_ener(outfile, method='MP2-F12', out_type="std"):
     if out_type == "std":
-        out = sp.check_output(f"./get_std_energy.sh {outfile}".split())        
+        #out = sp.check_output(f"./get_std_energy.sh {outfile}".split())        
+        ener = xop.get_xmlener(outfile) 
+        return ener            
     if out_type == "xg":
         out = sp.check_output(f"./get_xg_energy.sh {outfile}".split())
+    
+        out = out.decode('UTF-8')
+        if 'Molpro calculation terminated' not in out:
+            ener_not_found_error(outfile)
+            return None
 
-    out = out.decode('UTF-8')
-    if 'Molpro calculation terminated' not in out:
+        lines = out.split('\n')
+        for line in lines[-1::-1]:
+            if f'!{method}' in line and 'total energy' in line:
+                energy = float(line.split()[-1])
+                return energy
         ener_not_found_error(outfile)
-        return None
 
-    lines = out.split('\n')
-    for line in lines[-1::-1]:
-        if f'!{method}' in line and 'total energy' in line:
-            energy = float(line.split()[-1])
-            return energy
-    ener_not_found_error(outfile)
+
     return None
     
 if __name__ == "__main__":

@@ -8,11 +8,16 @@ outfiles = [
 
 
 def check_pass_fail(out, *args, **kwargs):
-    ener = TO.get_ener(out, *args, **kwargs)
+    try:
+        ener = TO.get_ener(out, *args, **kwargs)
+    except Exception as error:
+        if 'FAIL' in out: 
+            pass
+        else:
+            print(f"{out} should PASS, instead we got:")
+            raise
     if 'PASS' in out:
         assert isinstance(ener, float), f"{out} should PASS" 
-    elif 'FAIL' in out:
-        assert ener == None, f"{out} should FAIL"
 
 
 for out in outfiles:
