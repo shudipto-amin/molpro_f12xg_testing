@@ -7,7 +7,7 @@ This repo is for developing test routines for [F12-XG implementation](https://gi
 
 ### Input generators
 
-`gen_input.py` : Generates molpro input files for various ansatzes and codebases (writes to `outputs/`)
+`gen_test_input.py` : Generates molpro input files for Neon for standard (different ansatzes), default, and xg. (writes to `outputs/`)
 
 `optimize_gamma_by_element/gen_input.py` : Generates input file content based on atom name, gammas, etc
 
