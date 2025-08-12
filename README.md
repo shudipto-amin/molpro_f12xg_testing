@@ -8,9 +8,10 @@ This repo is for developing test routines for [F12-XG implementation](https://gi
 
 `analyze_outs.ipynb` : For experimenting with and further developing `xml_output_parser.py`
 
-`xml_output_parser.py` : For parsing to get energy from xml outputs.
-- works only on standard and default output files
-- works only on single point energy output files, not ones containing multiple jobs, such as those with different gamma
+`xml_output_parser.py` : For parsing to get energy from xml outputs. Works only on:
+- standard and default output files
+- **single point energy output files**, not ones containing multiple jobs, such as those with different gamma
+- **MP2-F12** method only for now
 
 `tabulate_outs.py` : For tabulating energies
 
