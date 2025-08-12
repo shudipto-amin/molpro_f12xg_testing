@@ -4,26 +4,35 @@ This repo is for developing test routines for [F12-XG implementation](https://gi
 
 
 ## Scripts
+
+### Input generators
+
 `gen_input.py` : Generates molpro input files for various ansatzes and codebases (writes to `outputs/`)
 
-`analyze_outs.ipynb` : For experimenting with and further developing `xml_output_parser.py`
-
-`xml_output_parser.py` : For parsing to get energy from xml outputs. Works only on:
-- standard and default output files
-- **single point energy output files**, not ones containing multiple jobs, such as those with different gamma
-- **MP2-F12** method only for now
-
-`tabulate_outs.py` : For tabulating energies
-
-DEPERACTED `analyze_outputs.py` : Analyzes outputs generated from generated input files above.
-
 `optimize_gamma_by_element/gen_input.py` : Generates input file content based on atom name, gammas, etc
-
-`optimize_gamma_by_element/plot.ipynb` : Plots E vs gamma
 
 `optimize_gamma_by_element/multi_inputs.sh` : Generates (using `gen_input.py` in same folder) many input files based on atom, basis, into the `outputs/` folder
 
 `f12xg_inputs/generate_gauss_from_gamma.ipynb` : Write Expfile.
+
+### Output parsing
+
+`analyze_outs.ipynb` : For experimenting with and further developing `xml_output_parser.py`
+
+`xml_output_parser.py` : For parsing to get energy from xml outputs. Works only on:
+- standard and default xml files
+- **single point energy output files**, not ones containing multiple jobs, such as those with different gamma
+- **MP2-F12** method only for now
+
+`tabulate_outs.py` : For tabulating energies. Depends on `xml_output_parser.py`
+
+DEPERACTED `analyze_outputs.py` : Analyzes outputs generated from generated input files above.
+
+### Plotting
+
+`optimize_gamma_by_element/plot.ipynb` : Plots E vs gamma
+
+
 
 ## Reference files (!!Need to add!!)
 
