@@ -34,6 +34,8 @@ def find_by_attrib(nodes, key, value):
 def get_xmlener(xmlfile, verbose=False):
     """
     Get energy from a given xml file
+    Can only have a single total energy, won't work on xml
+    files containing energies from multiple runs (or jobs).
     """
     tree = get_clean_tree(xmlfile)
     root = tree.getroot()
