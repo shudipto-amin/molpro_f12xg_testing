@@ -1,0 +1,10 @@
+memory,200,m
+gprint,orbitals
+
+geometry={
+  angstrom;
+  na;
+  cl, na, 2.36;
+}
+
+basis=aug-cc-pVDZ
