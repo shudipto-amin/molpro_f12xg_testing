@@ -29,7 +29,6 @@ def ener_not_found_error(outfile):
 
 def get_ener(outfile, method='MP2-F12', out_type="std"):
     if out_type == "std":
-        #out = sp.check_output(f"./get_std_energy.sh {outfile}".split())        
         ener = xop.get_xmlener(outfile) 
         return ener            
     if out_type == "xg":

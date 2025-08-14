@@ -1,7 +1,7 @@
 # Output files
 *.out
 !f12xg_inputs/betas_for_H.out
-!dimers/test_outs/*.out
+!test_outs/*.out
 *.xml
 j-*.o*
 *.log

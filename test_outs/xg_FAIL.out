@@ -1,0 +1,2030 @@
+
+ Working directory              : /SCR1/amin/na_cl_xg_1.2_1.4_1.3.152749-20250724/molpro.QYZqiCrNpF/
+ Global scratch directory       : /SCR1/amin/na_cl_xg_1.2_1.4_1.3.152749-20250724/molpro.QYZqiCrNpF/
+ Wavefunction directory         : /home/linux3_i1/amin/molpro_calculations/test_molpro_dev/dimers/
+ Main file repository           : /SCR1/amin/na_cl_xg_1.2_1.4_1.3.152749-20250724/molpro.QYZqiCrNpF/
+
+ id        : kamin
+
+ Nodes     nprocs
+ orpheus46    1
+ GA implementation: MPI file
+ GA implementation (serial work in mppx): MPI file
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (1045), CPU time= 0.01 sec
+ gprint,orbitals
+ 
+ geometry={
+   angstrom;
+   na;
+   cl, na, 2.36;
+ }
+ 
+ 
+ basis=aug-cc-pVDZ
+ 
+ {df-hf}
+ {df-mp2}
+ {df-mp2-f12,cpp_prog='DF-MP2-XG',ANSATZ='/home/linux3_i1/amin/f12xg_inputs/expfile_1.20_1.40_1.30.txt'}
+ Commands initialized (836), CPU time= 0.00 sec, 720 directives.
+ Default parameters read. Elapsed time= 0.14 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2024.3 linked Thu Jul 17 16:02:16 2025
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                                                                                                 
+  64 bit serial version                                                                  DATE: 24-Jul-25          TIME: 15:14:49  
+ **********************************************************************************************************************************
+
+ SHA1:             f8efddab7e9fb8d4eb929e30d491a2212e57de49
+ **********************************************************************************************************************************
+
+ Memory per process:        32 MW
+ Total memory per node:     32 MW
+
+ GA preallocation disabled
+ GA check disabled
+
+ Variable memory set to 32.0 MW
+
+
+
+ Turning off symmetry in density fitting calculation
+ To re-enable, use 'symmetry,auto'
+
+ SETTING BASIS          =    AUG-CC-PVDZ
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry NA     S aug-cc-pVDZ          selected for orbital group  1
+ Library entry NA     P aug-cc-pVDZ          selected for orbital group  1
+ Library entry NA     D aug-cc-pVDZ          selected for orbital group  1
+ Library entry CL     S aug-cc-pVDZ          selected for orbital group  2
+ Library entry CL     P aug-cc-pVDZ          selected for orbital group  2
+ Library entry CL     D aug-cc-pVDZ          selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Linear
+ Rotational constants:       6.5063157      6.5063157      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  NA     11.00    0.000000000    0.000000000   -2.705404908
+   2  CL     17.00    0.000000000    0.000000000    1.754348746
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  4.459753654
+     ( 2.360000000)
+
+ NUCLEAR CHARGE:                   28
+ NUMBER OF PRIMITIVE AOS:         104
+ NUMBER OF SYMMETRY AOS:          100
+ NUMBER OF CONTRACTIONS:           54   (   54A   )
+ NUMBER OF INNER CORE ORBITALS:     2   (    2A   )
+ NUMBER OF OUTER CORE ORBITALS:     8   (    8A   )
+ NUMBER OF VALENCE ORBITALS:        8   (    8A   )
+
+
+ NUCLEAR REPULSION ENERGY   41.93056714
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 1 1 2 3 1 2 3   1 2 3 1 2 3 1 1 4 2   5 3 1 4 2 5 3 1 1 1   1 1 2 3 1 2 3 1 2 3
+                                        1 2 3 1 1 4 2 5 3 1   4 2 5 3
+
+ Eigenvalues of metric
+
+         1 0.154E-02 0.913E-02 0.187E-01 0.310E-01 0.310E-01 0.484E-01 0.509E-01 0.509E-01
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       28.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.19      0.09
+ REAL TIME  *         0.48 SEC
+ DISK USED  *        29.28 MB
+ **********************************************************************************************************************************
+
+
+ Program * Restricted Hartree-Fock
+
+
+ Generating basis AVDZ-JKFIT
+  Atom=NA       basis=def2-QZVPP/JKFIT
+  Atom=CL       basis=aug-cc-pVDZ/JKFIT
+ Number of basis functions:     240
+
+ Coulomb and exchange fitting
+ Thresholds for fitting:       THRAO_COUL= 1.0D-15    THRAO_EXCH= 1.0D-13    THRMO= 1.0D-12    THRPROD= 1.0D-12    THRASM= 1.0D-12
+                               THR2HLF=    1.0D-12
+
+ Basis set AVDZ-JKFIT loaded. Number of basis functions: 240
+
+ Orbital guess generated from atomic densities. Full valence occupancy:   15
+ Using density fitting in orbital guess
+
+
+ Initial occupancy:  14
+
+ NELEC=   28   SYM=1   MS2= 0   THRE=1.0D-08   THRD=3.2D-06   THRG=3.2D-06  HFMA2=F  DIIS_START=2   DIIS_MAX=10   DIIS_INCORE=F
+
+ Level shifts:    0.00 (CLOSED)    0.00 (OPEN)    0.30 (GAP_MIN)
+
+ ITER           ETOT              DE          GRAD        DDIFF     DIIS  NEXP   TIME(IT)  TIME(TOT)  DIAG
+   1     -621.40720809    -621.40720809     0.00D+00     0.19D+00     0     0       0.03      0.08    start
+   2     -621.43535072      -0.02814263     0.60D-02     0.23D-01     1     0       0.03      0.11    diag
+   3     -621.43827919      -0.00292847     0.24D-02     0.63D-02     2     0       0.03      0.14    diag
+   4     -621.43834275      -0.00006356     0.20D-03     0.11D-02     3     0       0.03      0.17    diag
+   5     -621.43834586      -0.00000311     0.46D-04     0.23D-03     4     0       0.03      0.20    diag
+   6     -621.43834603      -0.00000017     0.75D-05     0.50D-04     5     0       0.03      0.23    diag
+   7     -621.43834604      -0.00000001     0.19D-05     0.12D-04     6     0       0.03      0.26    diag
+   8     -621.43834604      -0.00000000     0.43D-06     0.20D-05     7     0       0.03      0.29    fixocc
+   9     -621.43834604      -0.00000000     0.11D-06     0.36D-06     0     0       0.03      0.32    diag
+
+ Final occupancy:  14
+
+ !RHF STATE 1.1 Energy               -621.438346039003
+  RHF One-electron energy            -949.126963867793
+  RHF Two-electron energy             285.758050693680
+  RHF Kinetic energy                  621.462163561830
+  RHF Nuclear energy                   41.930567135111
+  RHF Virial quotient                  -0.999961675023
+
+ !RHF STATE 1.1 Dipole moment          -0.00000000    -0.00000000    -3.68337493
+ Dipole moment /Debye                  -0.00000000    -0.00000000    -9.36220523
+
+ ELECTRON ORBITALS
+ =================
+
+  Orbital  Occupation    Energy    Cen Mu Typ  Coefficients
+    1.1     2.00000  -104.70465     2  1  s    1.00002
+    2.1     2.00000   -40.50118     1  1  s    0.99998
+    3.1     2.00000   -10.42980     2  2  s    1.00338
+    4.1     2.00000    -7.89624     2  1  pz   0.99992
+    5.1     2.00000    -7.89540     2  1  px   0.99842
+    6.1     2.00000    -7.89540     2  1  py   0.99842
+    7.1     2.00000    -2.82444     1  2  s    1.00175
+    8.1     2.00000    -1.54670     1  1  pz   1.00137
+    9.1     2.00000    -1.54657     1  1  px  -0.65343    1  1  py   0.75692
+   10.1     2.00000    -1.54657     1  1  px   0.75692    1  1  py   0.65343
+   11.1     2.00000    -0.94260     2  3  s    0.92783
+   12.1     2.00000    -0.37063     2  2  pz   0.89128
+   13.1     2.00000    -0.35261     2  2  px   0.36590    2  2  py   0.82992
+   14.1     2.00000    -0.35261     2  2  px   0.82992    2  2  py  -0.36590
+
+
+ HOMO     14.1    -0.352614 =      -9.5951eV
+ LUMO     15.1    -0.020564 =      -0.5596eV
+ LUMO-HOMO         0.332049 =       9.0355eV
+
+ Orbitals saved in record  2100.2
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       28.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        0.57       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL     DF-HF       INT
+ CPU TIMES  *         0.51      0.32      0.09
+ REAL TIME  *         0.89 SEC
+ DISK USED  *        31.25 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * MP2 (Closed-shell)     Authors: C. Hampel, H.-J. Werner, 1991, M. Deegan, P.J. Knowles, 1992
+
+
+
+ Generating basis AUG-CC-PVDZ-MP2FIT
+  Atom=NA       basis=aug-cc-pVDZ/MP2FIT
+  Atom=CL       basis=aug-cc-pVDZ/MP2FIT
+ Number of basis functions:     184
+
+
+ Convergence thresholds:  THRVAR = 1.00D-08  THRDEN = 1.00D-06
+
+ Number of core orbitals:          10 (  10 )
+ Number of closed-shell orbitals:   4 (   4 )
+ Number of external orbitals:      40 (  40 )
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL  
+
+
+ Entering DF-MP2
+
+ Thresholds:    THRAO= 0.100D-13    THRMO= 0.100D-13    THROV= 0.100D-13    THRPROD= 0.100D-13
+
+ Fitting basis: AUG-CC-PVDZ-MP2FIT
+ Number of fitting functions:              184
+
+ Minimum memory with paging:              0.86 MW
+ Minimum memory for incore algorithm:     0.89 MW
+ Memory for 3-index integrals:            0.00 MW
+
+ Disk space for H1-integrals:             0.32 MB (   1 records)
+
+ SCS-MP2 correlation energy:           -0.152223339145   (PS=  1.200000  PT=  0.333333)
+ SCS-MP2 total energy:               -621.590569378148
+
+ Norm of first-order wave function:     0.048023807179
+ Coefficient of reference function:     0.976819736422
+
+  Reference energy                   -621.438346039003
+  MP2 singlet pair energy              -0.093537971033
+  MP2 triplet pair energy              -0.064249993777
+  MP2 correlation energy               -0.157787964810
+
+ !MP2 total energy                   -621.596134003812
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       28.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        0.57       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL    DF-MP2     DF-HF       INT
+ CPU TIMES  *         0.57      0.05      0.32      0.09
+ REAL TIME  *         1.00 SEC
+ DISK USED  *        31.25 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * MP2 (Closed-shell)     Authors: C. Hampel, H.-J. Werner, 1991, M. Deegan, P.J. Knowles, 1992
+
+                                   MP2-F12 implementation by H.-J. Werner, 2007
+
+                   Density fitting integral evaluation by F.R. Manby, 2003,2007, G. Knizia, 2010
+
+
+
+ Generating basis AVDZ-JKFIT
+
+ Generating basis AVDZ-JKFIT
+
+ Generating basis AUG-CC-PVDZ-MP2FIT
+
+ Convergence thresholds:  THRVAR = 1.00D-08  THRDEN = 1.00D-06
+
+ Number of core orbitals:          10 (  10 )
+ Number of closed-shell orbitals:   4 (   4 )
+ Number of external orbitals:      40 (  40 )
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL  
+ Ansatz: F12//HOME/LINUX3_I1/AMIN/F12XG_INPUTS/EXPFILE_1.20_1.40_1.30.TXT
+ Using F12XG exponents file
+ ContextName: df_mp2-f12-xg
+
+ AlgoFileName: DfMp2-f12-xg.itfca
+
+ Algorithm: DfMp2-f12-xg.itfca
+
+ ==== Running InitGeminal()
+ EXPFILE: /home/linux3_i1/amin/f12xg_inputs/expfile_1.20_1.40_1.30.txt
+ nGem 6
+ key = nCo
+ 1 nCo 1
+ key = Exp
+ arr[0] = 0.25634
+ arr[1] = 1.01398
+ arr[2] = 3.4494
+ arr[3] = 11.3613
+ arr[4] = 42.567
+ arr[5] = 235.638
+ 1 Exp 0.25634,1.01398,3.4494,11.36128,42.56704,235.63792
+ key = Coe
+ arr[0] = 0.23874
+ arr[1] = 0.30393
+ arr[2] = 0.19417
+ arr[3] = 0.11944
+ arr[4] = 0.07465
+ arr[5] = 0.04642
+ 1 Coe 0.23874,0.30393,0.19417,0.11944,0.07465,0.04642
+ key = nCo
+ 2 nCo 1
+ key = Exp
+ arr[0] = 0.32335
+ arr[1] = 1.2209
+ arr[2] = 4.06503
+ arr[3] = 13.2865
+ arr[4] = 49.6523
+ arr[5] = 274.65
+ 2 Exp 0.32335,1.2209,4.06503,13.28654,49.65231,274.64957
+ key = Coe
+ arr[0] = 0.21345
+ arr[1] = 0.30057
+ arr[2] = 0.20316
+ arr[3] = 0.12774
+ arr[4] = 0.08045
+ arr[5] = 0.05014
+ 2 Coe 0.21345,0.30057,0.20316,0.12774,0.08045,0.05014
+ key = nCo
+ 3 nCo 1
+ key = Exp
+ arr[0] = 0.28911
+ arr[1] = 1.11593
+ arr[2] = 3.75397
+ arr[3] = 12.3155
+ arr[4] = 46.0811
+ arr[5] = 254.99
+ 3 Exp 0.28911,1.11593,3.75397,12.31549,46.08106,254.99017
+ key = Coe
+ arr[0] = 0.2254
+ arr[1] = 0.30241
+ arr[2] = 0.1989
+ arr[3] = 0.12373
+ arr[4] = 0.07763
+ arr[5] = 0.04833
+ 3 Coe 0.2254,0.30241,0.1989,0.12373,0.07763,0.04833
+ Finished with READING EXPFILE
+ Printing m_GemExp_F12_1
+ 1 0.25634 0.23874
+ 1 1.01398 0.30393
+ 1 3.4494 0.19417
+ 1 11.3613 0.11944
+ 1 42.567 0.07465
+ 1 235.638 0.04642
+ Setting F12 squares
+ Setting F12 cross terms
+ ==== Running InitSpecialBasisSets()
+ Importing basis set 'ORBITAL'.
+ Imported basis set 'ORBITAL'.
+ Blocks:
+     17 14 23
+ Shells:
+    [4: s on 0][1: s on 0][9: p on 0][3: p on 0][10: d on 0][4: s on 1][1: s on 1][9: p on 1][3: p on 1][10: d on 1]
+ Load DF basis AUG-CC-PVDZ-MP2FIT
+
+ Importing basis set 'AUG-CC-PVDZ-MP2FIT'.
+ Imported basis set 'AUG-CC-PVDZ-MP2FIT'.
+ Blocks:
+     10 24 30 28 10 24 30 28
+ Shells:
+    [10: s on 0][24: p on 0][30: d on 0][28: f on 0][10: s on 1][24: p on 1][30: d on 1][28: f on 1]
+ Load DF basis AVDZ-JKFIT
+
+ Importing basis set 'AVDZ-JKFIT'.
+ Imported basis set 'AVDZ-JKFIT'.
+ Blocks:
+     16 24 5 30 28 23 36 50 28
+ Shells:
+    [1: s on 0][12: s on 0][3: p on 0][24: p on 0][5: d on 0][30: d on 0][28: f on 0][9: g on 0][14: s on 1][36: p on 1][50: d on 1][28: f on 1]
+ Load DF basis AVDZ-JKFIT
+
+ Importing basis set 'AVDZ-JKFIT'.
+ Imported basis set 'AVDZ-JKFIT'.
+ Blocks:
+     16 24 5 30 28 23 36 50 28
+ Shells:
+    [1: s on 0][12: s on 0][3: p on 0][24: p on 0][5: d on 0][30: d on 0][28: f on 0][9: g on 0][14: s on 1][36: p on 1][50: d on 1][28: f on 1]
+ ==== Running InitBaseIntegralKernels()
+ ==== Running InitIntegralKernels()
+ ==== Running SetGeminalAssignment()
+ ==== Running ListGeminalAssignment()
+ 1  atom index: 0  l = 0  nFunc: 4  nPrim: 12
+    GammaGroups:   1 1 1 1
+ 2  atom index: 0  l = 0  nFunc: 1  nPrim: 1
+    GammaGroups:   1
+ 3  atom index: 0  l = 1  nFunc: 9  nPrim: 24
+    GammaGroups:   1 1 1 1 1 1 1 1 1
+ 4  atom index: 0  l = 1  nFunc: 3  nPrim: 3
+    GammaGroups:   1 1 1
+ 5  atom index: 0  l = 2  nFunc: 10  nPrim: 10
+    GammaGroups:   1 1 1 1 1 1 1 1 1 1
+ 6  atom index: 1  l = 0  nFunc: 4  nPrim: 12
+    GammaGroups:   2 2 2 2
+ 7  atom index: 1  l = 0  nFunc: 1  nPrim: 1
+    GammaGroups:   2
+ 8  atom index: 1  l = 1  nFunc: 9  nPrim: 24
+    GammaGroups:   2 2 2 2 2 2 2 2 2
+ 9  atom index: 1  l = 1  nFunc: 3  nPrim: 3
+    GammaGroups:   2 2 2
+ 10  atom index: 1  l = 2  nFunc: 10  nPrim: 10
+    GammaGroups:   2 2 2 2 2 2 2 2 2 2
+ Importing Molpro integrals.
+  reserve for tensor : f:ee                             file = 6 rec = 6000 ofs = 0 len = 12800
+  reserve for tensor : f:ec                             file = 6 rec = 6000 ofs = 12800 len = 1280
+  reserve for tensor : f:ea                             file = 6 rec = 6000 ofs = 14080 len = 0
+  reserve for tensor : f:cc                             file = 6 rec = 6000 ofs = 14080 len = 128
+  reserve for tensor : f:ca                             file = 6 rec = 6000 ofs = 14208 len = 0
+  reserve for tensor : f:aa                             file = 6 rec = 6000 ofs = 14208 len = 0
+  reserve for tensor : f:CC                             file = 6 rec = 6000 ofs = 14208 len = 448
+  reserve for tensor : f:cC                             file = 6 rec = 6000 ofs = 14656 len = 320
+  reserve for tensor : f:eC                             file = 6 rec = 6000 ofs = 14976 len = 3200
+ FDiskTensor: store f:ee range [0,1)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 12800)
+ FDiskTensor: store f:ec range [0,1)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 1280)
+ FDiskTensor: store f:ea range [0,1)x[0,0)  (nSeq = 0)
+ FDiskTensor: store f:cc range [0,4)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 80)
+ FDiskTensor: store f:ca range [0,4)x[0,0)  (nSeq = 0)
+ FDiskTensor: store f:aa range [0,0)x[0,0)  (nSeq = 0)
+ FDiskTensor: store f:CC range [0,10)x[0,10)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 440)
+ FDiskTensor: store f:cC range [0,4)x[0,10)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 320)
+ FDiskTensor: store f:eC range [0,1)x[0,10)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 3200)
+  reserve for tensor : g:ee                             file = 6 rec = 6000 ofs = 18176 len = 12800
+  reserve for tensor : g:ec                             file = 6 rec = 6000 ofs = 30976 len = 1280
+  reserve for tensor : g:ea                             file = 6 rec = 6000 ofs = 32256 len = 0
+  reserve for tensor : g:cc                             file = 6 rec = 6000 ofs = 32256 len = 128
+  reserve for tensor : g:ca                             file = 6 rec = 6000 ofs = 32384 len = 0
+  reserve for tensor : g:aa                             file = 6 rec = 6000 ofs = 32384 len = 0
+ FDiskTensor: store g:ee range [0,1)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 12800)
+ FDiskTensor: store g:ec range [0,1)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 1280)
+ FDiskTensor: store g:ea range [0,1)x[0,0)  (nSeq = 0)
+ FDiskTensor: store g:cc range [0,4)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 80)
+ FDiskTensor: store g:ca range [0,4)x[0,0)  (nSeq = 0)
+ FDiskTensor: store g:aa range [0,0)x[0,0)  (nSeq = 0)
+  reserve for tensor : h:ee                             file = 6 rec = 6000 ofs = 32384 len = 12800
+  reserve for tensor : h:ec                             file = 6 rec = 6000 ofs = 45184 len = 1280
+  reserve for tensor : h:ea                             file = 6 rec = 6000 ofs = 46464 len = 0
+  reserve for tensor : h:cc                             file = 6 rec = 6000 ofs = 46464 len = 128
+  reserve for tensor : h:ca                             file = 6 rec = 6000 ofs = 46592 len = 0
+  reserve for tensor : h:aa                             file = 6 rec = 6000 ofs = 46592 len = 0
+  reserve for tensor : h:CC                             file = 6 rec = 6000 ofs = 46592 len = 448
+ FDiskTensor: store h:ee range [0,1)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 12800)
+ FDiskTensor: store h:ec range [0,1)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 1280)
+ FDiskTensor: store h:ea range [0,1)x[0,0)  (nSeq = 0)
+ FDiskTensor: store h:cc range [0,4)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 80)
+ FDiskTensor: store h:ca range [0,4)x[0,0)  (nSeq = 0)
+ FDiskTensor: store h:aa range [0,0)x[0,0)  (nSeq = 0)
+ FDiskTensor: store h:CC range [0,10)x[0,10)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 440)
+  reserve for tensor : Orb:Ac                           file = 6 rec = 6000 ofs = 47040 len = 1728
+ FDiskTensor: store Orb:Ac range [0,3)x[0,4)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 1728)
+  reserve for tensor : Orb:Ae                           file = 6 rec = 6000 ofs = 48768 len = 17280
+ FDiskTensor: store Orb:Ae range [0,3)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 17280)
+  reserve for tensor : Orb:Ar                           file = 6 rec = 6000 ofs = 66048 len = 23360
+ FDiskTensor: store Orb:Ar range [0,3)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 23328)
+  reserve for tensor : Orb:AI                           file = 6 rec = 6000 ofs = 89408 len = 6080
+ FDiskTensor: store Orb:AI range [0,3)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 6048)
+ ABS:                           EwMin = 1.359e-05  EwMax = 7.042e+00  Ratio = 1.930e-06
+ CABS:                          EwMin = 3.264e-08  EwMax = 1.000e+00  Ratio = 3.264e-08
+  reserve for tensor : Cabs:Rx                          file = 6 rec = 6000 ofs = 95488 len = 460800
+ FDiskTensor: store Cabs:Rx range [0,9)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 460800)
+  reserve for tensor : Cabs:Ax                          file = 6 rec = 6000 ofs = 556288 len = 103680
+ FDiskTensor: store Cabs:Ax range [0,3)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 103680)
+  reserve for tensor : CoreH:AA                         file = 6 rec = 6000 ofs = 659968 len = 23360
+ FDiskTensor: store CoreH:AA range [0,3)x[0,3)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 23328)
+  reserve for tensor : CoreH:RA                         file = 6 rec = 6000 ofs = 683328 len = 103680
+ FDiskTensor: store CoreH:RA range [0,9)x[0,3)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 103680)
+  reserve for tensor : CoreH:RR                         file = 6 rec = 6000 ofs = 787008 len = 460800
+ FDiskTensor: store CoreH:RR range [0,9)x[0,9)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 460800)
+ ==== Running AlgoSet.LoadAlgoFile()
+ AlgoFile SearchPath[0] = /home/linux3_i1/amin/molpro_ak-ustutt/Molpro_clean/build_cmake/bin/
+ AlgoFile SearchPath[1] = /home/linux3_i1/amin/molpro_ak-ustutt/Molpro_clean/build_cmake/bin/../lib/algo/
+ Loading itfca: df_mp2-f12-xg [/home/linux3_i1/amin/molpro_ak-ustutt/Molpro_clean/src/algo/DfMp2-f12-xg.itfaa, ]
+  reserve for tensor : df_mp2-f12-xg::BF[mnij]          file = 6 rec = 6000 ofs = 1247808 len = 2048
+  reserve for tensor : df_mp2-f12-xg::CF[abij]          file = 6 rec = 6000 ofs = 1249856 len = 204800
+  reserve for tensor : df_mp2-f12-xg::CJ[MNF]           file = 6 rec = 6000 ofs = 1454656 len = 4292352
+  reserve for tensor : df_mp2-f12-xg::CJ[RNF]           file = 6 rec = 6000 ofs = 5747008 len = 19077120
+  reserve for tensor : df_mp2-f12-xg::DF:Fec            file = 6 rec = 6000 ofs = 24824128 len = 235520
+  reserve for tensor : df_mp2-f12-xg::DF[FIi]           file = 6 rec = 6000 ofs = 25059648 len = 82432
+  reserve for tensor : df_mp2-f12-xg::DF[FNi]           file = 6 rec = 6000 ofs = 25142080 len = 317952
+  reserve for tensor : df_mp2-f12-xg::DF[FSi]           file = 6 rec = 6000 ofs = 25460032 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::DF[Fmi]           file = 6 rec = 6000 ofs = 26873152 len = 23552
+  reserve for tensor : df_mp2-f12-xg::DF[Fri]           file = 6 rec = 6000 ofs = 26896704 len = 317952
+  reserve for tensor : df_mp2-f12-xg::DF[Fxi]           file = 6 rec = 6000 ofs = 27214656 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::DFbar[FJi]        file = 6 rec = 6000 ofs = 28627776 len = 82432
+  reserve for tensor : df_mp2-f12-xg::DFbar[Fmi]        file = 6 rec = 6000 ofs = 28710208 len = 23552
+  reserve for tensor : df_mp2-f12-xg::DFbar[Fri]        file = 6 rec = 6000 ofs = 28733760 len = 317952
+  reserve for tensor : df_mp2-f12-xg::DFbar[Fxi]        file = 6 rec = 6000 ofs = 29051712 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::DFtil[Fai]        file = 6 rec = 6000 ofs = 30464832 len = 235520
+  reserve for tensor : df_mp2-f12-xg::DFtil[Fxi]        file = 6 rec = 6000 ofs = 30700352 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dc2F1F1[FF]       file = 6 rec = 6000 ofs = 32113472 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F1F2[FF]       file = 6 rec = 6000 ofs = 32384320 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F1F3[FF]       file = 6 rec = 6000 ofs = 32655168 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F1[FF]         file = 6 rec = 6000 ofs = 32926016 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F2F2[FF]       file = 6 rec = 6000 ofs = 33196864 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F2F3[FF]       file = 6 rec = 6000 ofs = 33467712 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2F3F3[FF]       file = 6 rec = 6000 ofs = 33738560 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2FF[FF]         file = 6 rec = 6000 ofs = 34009408 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2FT[FF]         file = 6 rec = 6000 ofs = 34280256 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2K1[FF]         file = 6 rec = 6000 ofs = 34551104 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dc2KF[FF]         file = 6 rec = 6000 ofs = 34821952 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[FIi]        file = 6 rec = 6000 ofs = 35092800 len = 82432
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[FNi]        file = 6 rec = 6000 ofs = 35175232 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[FSi]        file = 6 rec = 6000 ofs = 35493184 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[Fai]        file = 6 rec = 6000 ofs = 36906304 len = 235520
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[Fri]        file = 6 rec = 6000 ofs = 37141824 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dl3F1[Fxi]        file = 6 rec = 6000 ofs = 37459776 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dl3F1bar[FJi]     file = 6 rec = 6000 ofs = 38872896 len = 82432
+  reserve for tensor : df_mp2-f12-xg::Dl3F1bar[Fri]     file = 6 rec = 6000 ofs = 38955328 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dl3F1bar[Fxi]     file = 6 rec = 6000 ofs = 39273280 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dl3F1til[Fai]     file = 6 rec = 6000 ofs = 40686400 len = 235520
+  reserve for tensor : df_mp2-f12-xg::Dl3F1til[Fxi]     file = 6 rec = 6000 ofs = 40921920 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dl3FF[FNi]        file = 6 rec = 6000 ofs = 42335040 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dl3FF[FSi]        file = 6 rec = 6000 ofs = 42652992 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dl3FF[Fmi]        file = 6 rec = 6000 ofs = 44066112 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dl3FFbar[Fmi]     file = 6 rec = 6000 ofs = 44089664 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dl3FT[Fmi]        file = 6 rec = 6000 ofs = 44113216 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dl3KF[Fmi]        file = 6 rec = 6000 ofs = 44136768 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[FIi]        file = 6 rec = 6000 ofs = 44160320 len = 82432
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[FNi]        file = 6 rec = 6000 ofs = 44242752 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[FSi]        file = 6 rec = 6000 ofs = 44560704 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[Fai]        file = 6 rec = 6000 ofs = 45973824 len = 235520
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[Fri]        file = 6 rec = 6000 ofs = 46209344 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dr3F1[Fxi]        file = 6 rec = 6000 ofs = 46527296 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dr3F1bar[FJi]     file = 6 rec = 6000 ofs = 47940416 len = 82432
+  reserve for tensor : df_mp2-f12-xg::Dr3F1bar[Fri]     file = 6 rec = 6000 ofs = 48022848 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dr3F1bar[Fxi]     file = 6 rec = 6000 ofs = 48340800 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dr3F1til[Fai]     file = 6 rec = 6000 ofs = 49753920 len = 235520
+  reserve for tensor : df_mp2-f12-xg::Dr3F1til[Fxi]     file = 6 rec = 6000 ofs = 49989440 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dr3FF[FNi]        file = 6 rec = 6000 ofs = 51402560 len = 317952
+  reserve for tensor : df_mp2-f12-xg::Dr3FF[FSi]        file = 6 rec = 6000 ofs = 51720512 len = 1413120
+  reserve for tensor : df_mp2-f12-xg::Dr3FF[Fmi]        file = 6 rec = 6000 ofs = 53133632 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dr3FFbar[Fmi]     file = 6 rec = 6000 ofs = 53157184 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dr3FT[Fmi]        file = 6 rec = 6000 ofs = 53180736 len = 23552
+  reserve for tensor : df_mp2-f12-xg::Dr3KF[Fmi]        file = 6 rec = 6000 ofs = 53204288 len = 23552
+  reserve for tensor : df_mp2-f12-xg::F1C[MJij]         file = 6 rec = 6000 ofs = 53227840 len = 96768
+  reserve for tensor : df_mp2-f12-xg::F1C[MNPQ]         file = 6 rec = 6000 ofs = 53324608 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1C[MNPb]         file = 6 rec = 6000 ofs = 121349056 len = 50388480
+  reserve for tensor : df_mp2-f12-xg::F1C[MNPj]         file = 6 rec = 6000 ofs = 171737536 len = 5038848
+  reserve for tensor : df_mp2-f12-xg::F1C[MNab]         file = 6 rec = 6000 ofs = 176776384 len = 37324800
+  reserve for tensor : df_mp2-f12-xg::F1C[MNij]         file = 6 rec = 6000 ofs = 214101184 len = 373248
+  reserve for tensor : df_mp2-f12-xg::F1C[Mbij]         file = 6 rec = 6000 ofs = 214474432 len = 276480
+  reserve for tensor : df_mp2-f12-xg::F1C[Mjab]         file = 6 rec = 6000 ofs = 214750912 len = 2764800
+  reserve for tensor : df_mp2-f12-xg::F1C[Msij]         file = 6 rec = 6000 ofs = 217515712 len = 373248
+  reserve for tensor : df_mp2-f12-xg::F1C[Myij]         file = 6 rec = 6000 ofs = 217888960 len = 1658880
+  reserve for tensor : df_mp2-f12-xg::F1C[RJij]         file = 6 rec = 6000 ofs = 219547840 len = 430080
+  reserve for tensor : df_mp2-f12-xg::F1C[RNPQ]         file = 6 rec = 6000 ofs = 219977920 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1C[RNPj]         file = 6 rec = 6000 ofs = 522308800 len = 22394880
+  reserve for tensor : df_mp2-f12-xg::F1C[RNij]         file = 6 rec = 6000 ofs = 544703680 len = 1658880
+  reserve for tensor : df_mp2-f12-xg::F1C[RSPQ]         file = 6 rec = 6000 ofs = 546362560 len = 1343692800
+  reserve for tensor : df_mp2-f12-xg::F1C[RSPj]         file = 6 rec = 6000 ofs = 1890055360 len = 99532800
+  reserve for tensor : df_mp2-f12-xg::F1C[RSij]         file = 6 rec = 6000 ofs = 1989588160 len = 7372800
+  reserve for tensor : df_mp2-f12-xg::F1C[Rbij]         file = 6 rec = 6000 ofs = 1996960960 len = 1228800
+  reserve for tensor : df_mp2-f12-xg::F1C[Rrij]         file = 6 rec = 6000 ofs = 1998189760 len = 1658880
+  reserve for tensor : df_mp2-f12-xg::F1C[Ryij]         file = 6 rec = 6000 ofs = 1999848640 len = 7372800
+  reserve for tensor : df_mp2-f12-xg::F1C[abij]         file = 6 rec = 6000 ofs = 2007221440 len = 204800
+  reserve for tensor : df_mp2-f12-xg::F1C[ijab]         file = 6 rec = 6000 ofs = 2007426240 len = 204800
+  reserve for tensor : df_mp2-f12-xg::F1C[rJij]         file = 6 rec = 6000 ofs = 2007631040 len = 96768
+  reserve for tensor : df_mp2-f12-xg::F1C[rsij]         file = 6 rec = 6000 ofs = 2007727808 len = 373248
+  reserve for tensor : df_mp2-f12-xg::F1C[xJij]         file = 6 rec = 6000 ofs = 2008101056 len = 430080
+  reserve for tensor : df_mp2-f12-xg::F1C[xbij]         file = 6 rec = 6000 ofs = 2008531136 len = 1228800
+  reserve for tensor : df_mp2-f12-xg::F1C[xrij]         file = 6 rec = 6000 ofs = 2009759936 len = 1658880
+  reserve for tensor : df_mp2-f12-xg::F1C[xyij]         file = 6 rec = 6000 ofs = 2011418816 len = 7372800
+  reserve for tensor : df_mp2-f12-xg::F1F1[MNPQ]        file = 6 rec = 6000 ofs = 2018791616 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F1[RNPQ]        file = 6 rec = 6000 ofs = 2086816064 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F1[rNPQ]        file = 6 rec = 6000 ofs = 2389146944 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F1[xNPQ]        file = 6 rec = 6000 ofs = 2457171392 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F1bar[MNPQ]     file = 6 rec = 6000 ofs = 2759502272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F1barint[MNPQ]  file = 6 rec = 6000 ofs = 2827526720 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F2[MNPQ]        file = 6 rec = 6000 ofs = 2895551168 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F2[RNPQ]        file = 6 rec = 6000 ofs = 2963575616 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F2[rNPQ]        file = 6 rec = 6000 ofs = 3265906496 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F2[xNPQ]        file = 6 rec = 6000 ofs = 3333930944 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F2bar[MNPQ]     file = 6 rec = 6000 ofs = 3636261824 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F2barint[MNPQ]  file = 6 rec = 6000 ofs = 3704286272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F3[MNPQ]        file = 6 rec = 6000 ofs = 3772310720 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F3[RNPQ]        file = 6 rec = 6000 ofs = 3840335168 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F3[rNPQ]        file = 6 rec = 6000 ofs = 4142666048 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F3[xNPQ]        file = 6 rec = 6000 ofs = 4210690496 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F1F3bar[MNPQ]     file = 6 rec = 6000 ofs = 4513021376 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1F3barint[MNPQ]  file = 6 rec = 6000 ofs = 4581045824 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1T1[MNPQ]        file = 6 rec = 6000 ofs = 4649070272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1T2[MNPQ]        file = 6 rec = 6000 ofs = 4717094720 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1T3[MNPQ]        file = 6 rec = 6000 ofs = 4785119168 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F1[abij]          file = 6 rec = 6000 ofs = 4853143616 len = 204800
+  reserve for tensor : df_mp2-f12-xg::F1[rsij]          file = 6 rec = 6000 ofs = 4853348416 len = 373248
+  reserve for tensor : df_mp2-f12-xg::F1[xJij]          file = 6 rec = 6000 ofs = 4853721664 len = 430080
+  reserve for tensor : df_mp2-f12-xg::F1[xbij]          file = 6 rec = 6000 ofs = 4854151744 len = 1228800
+  reserve for tensor : df_mp2-f12-xg::F1[xyij]          file = 6 rec = 6000 ofs = 4855380544 len = 7372800
+  reserve for tensor : df_mp2-f12-xg::F1bar[rsij]       file = 6 rec = 6000 ofs = 4862753344 len = 373248
+  reserve for tensor : df_mp2-f12-xg::F1bar[xJij]       file = 6 rec = 6000 ofs = 4863126592 len = 430080
+  reserve for tensor : df_mp2-f12-xg::F1til[xbij]       file = 6 rec = 6000 ofs = 4863556672 len = 1228800
+  reserve for tensor : df_mp2-f12-xg::F1til[xyij]       file = 6 rec = 6000 ofs = 4864785472 len = 7372800
+  reserve for tensor : df_mp2-f12-xg::F2F2[MNPQ]        file = 6 rec = 6000 ofs = 4872158272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F2[RNPQ]        file = 6 rec = 6000 ofs = 4940182720 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F2F2[rNPQ]        file = 6 rec = 6000 ofs = 5242513600 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F2[xNPQ]        file = 6 rec = 6000 ofs = 5310538048 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F2F2bar[MNPQ]     file = 6 rec = 6000 ofs = 5612868928 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F2barint[MNPQ]  file = 6 rec = 6000 ofs = 5680893376 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F3[MNPQ]        file = 6 rec = 6000 ofs = 5748917824 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F3[RNPQ]        file = 6 rec = 6000 ofs = 5816942272 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F2F3[rNPQ]        file = 6 rec = 6000 ofs = 6119273152 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F3[xNPQ]        file = 6 rec = 6000 ofs = 6187297600 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F2F3bar[MNPQ]     file = 6 rec = 6000 ofs = 6489628480 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2F3barint[MNPQ]  file = 6 rec = 6000 ofs = 6557652928 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2T2[MNPQ]        file = 6 rec = 6000 ofs = 6625677376 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F2T3[MNPQ]        file = 6 rec = 6000 ofs = 6693701824 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F3F3[MNPQ]        file = 6 rec = 6000 ofs = 6761726272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F3F3[RNPQ]        file = 6 rec = 6000 ofs = 6829750720 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F3F3[rNPQ]        file = 6 rec = 6000 ofs = 7132081600 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F3F3[xNPQ]        file = 6 rec = 6000 ofs = 7200106048 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::F3F3bar[MNPQ]     file = 6 rec = 6000 ofs = 7502436928 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F3F3barint[MNPQ]  file = 6 rec = 6000 ofs = 7570461376 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::F3T3[MNPQ]        file = 6 rec = 6000 ofs = 7638485824 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::FFC[MNPQ]         file = 6 rec = 6000 ofs = 7706510272 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::FFC[MNPj]         file = 6 rec = 6000 ofs = 7774534720 len = 5038848
+  reserve for tensor : df_mp2-f12-xg::FFC[MNij]         file = 6 rec = 6000 ofs = 7779573568 len = 373248
+  reserve for tensor : df_mp2-f12-xg::FFC[Mnij]         file = 6 rec = 6000 ofs = 7779946816 len = 27648
+  reserve for tensor : df_mp2-f12-xg::FFC[mnij]         file = 6 rec = 6000 ofs = 7779974464 len = 2048
+  reserve for tensor : df_mp2-f12-xg::FF[mnij]          file = 6 rec = 6000 ofs = 7779976512 len = 2048
+  reserve for tensor : df_mp2-f12-xg::FFbarC[MNPQ]      file = 6 rec = 6000 ofs = 7779978560 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::FFbarC[MNPj]      file = 6 rec = 6000 ofs = 7848003008 len = 5038848
+  reserve for tensor : df_mp2-f12-xg::FFbarC[MNij]      file = 6 rec = 6000 ofs = 7853041856 len = 373248
+  reserve for tensor : df_mp2-f12-xg::FFbarC[Mnij]      file = 6 rec = 6000 ofs = 7853415104 len = 27648
+  reserve for tensor : df_mp2-f12-xg::FFbarC[mnij]      file = 6 rec = 6000 ofs = 7853442752 len = 2048
+  reserve for tensor : df_mp2-f12-xg::FFbar[mnij]       file = 6 rec = 6000 ofs = 7853444800 len = 2048
+  reserve for tensor : df_mp2-f12-xg::FInt[MNF]         file = 6 rec = 6000 ofs = 7853446848 len = 4292352
+  reserve for tensor : df_mp2-f12-xg::FInt[RNF]         file = 6 rec = 6000 ofs = 7857739200 len = 19077120
+  reserve for tensor : df_mp2-f12-xg::FTC[MNPQ]         file = 6 rec = 6000 ofs = 7876816320 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::FTC[MNPj]         file = 6 rec = 6000 ofs = 7944840768 len = 5038848
+  reserve for tensor : df_mp2-f12-xg::FTC[MNij]         file = 6 rec = 6000 ofs = 7949879616 len = 373248
+  reserve for tensor : df_mp2-f12-xg::FTC[Mnij]         file = 6 rec = 6000 ofs = 7950252864 len = 27648
+  reserve for tensor : df_mp2-f12-xg::FTC[mnij]         file = 6 rec = 6000 ofs = 7950280512 len = 2048
+  reserve for tensor : df_mp2-f12-xg::FT[mnij]          file = 6 rec = 6000 ofs = 7950282560 len = 2048
+  reserve for tensor : df_mp2-f12-xg::Ff1[MNPQ]         file = 6 rec = 6000 ofs = 7950284608 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::Ff1[RNPQ]         file = 6 rec = 6000 ofs = 8018309056 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::Ff1[RSPQ]         file = 6 rec = 6000 ofs = 8320639936 len = 1343692800
+  reserve for tensor : df_mp2-f12-xg::Ff2[MNPQ]         file = 6 rec = 6000 ofs = 9664332736 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::Ff2[RNPQ]         file = 6 rec = 6000 ofs = 9732357184 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::Ff2[RSPQ]         file = 6 rec = 6000 ofs = 10034688064 len = 1343692800
+  reserve for tensor : df_mp2-f12-xg::Ff3[MNPQ]         file = 6 rec = 6000 ofs = 11378380864 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::Ff3[RNPQ]         file = 6 rec = 6000 ofs = 11446405312 len = 302330880
+  reserve for tensor : df_mp2-f12-xg::Ff3[RSPQ]         file = 6 rec = 6000 ofs = 11748736192 len = 1343692800
+  reserve for tensor : df_mp2-f12-xg::Har[MM]           file = 6 rec = 6000 ofs = 13092428992 len = 23360
+  reserve for tensor : df_mp2-f12-xg::Har[Mr]           file = 6 rec = 6000 ofs = 13092452352 len = 23360
+  reserve for tensor : df_mp2-f12-xg::Har[Mx]           file = 6 rec = 6000 ofs = 13092475712 len = 103680
+  reserve for tensor : df_mp2-f12-xg::Har[RM]           file = 6 rec = 6000 ofs = 13092579392 len = 103680
+  reserve for tensor : df_mp2-f12-xg::Har[RR]           file = 6 rec = 6000 ofs = 13092683072 len = 460800
+  reserve for tensor : df_mp2-f12-xg::Har[ij]           file = 6 rec = 6000 ofs = 13093143872 len = 128
+  reserve for tensor : df_mp2-f12-xg::Har[rI]           file = 6 rec = 6000 ofs = 13093144000 len = 6080
+  reserve for tensor : df_mp2-f12-xg::Har[ri]           file = 6 rec = 6000 ofs = 13093150080 len = 1728
+  reserve for tensor : df_mp2-f12-xg::Har[rs]           file = 6 rec = 6000 ofs = 13093151808 len = 23360
+  reserve for tensor : df_mp2-f12-xg::Har[xI]           file = 6 rec = 6000 ofs = 13093175168 len = 26880
+  reserve for tensor : df_mp2-f12-xg::Har[xb]           file = 6 rec = 6000 ofs = 13093202048 len = 76800
+  reserve for tensor : df_mp2-f12-xg::Har[xi]           file = 6 rec = 6000 ofs = 13093278848 len = 7680
+  reserve for tensor : df_mp2-f12-xg::Har[xs]           file = 6 rec = 6000 ofs = 13093286528 len = 103680
+  reserve for tensor : df_mp2-f12-xg::Har[xy]           file = 6 rec = 6000 ofs = 13093390208 len = 460800
+  reserve for tensor : df_mp2-f12-xg::ItmM[MI]          file = 6 rec = 6000 ofs = 13093851008 len = 6080
+  reserve for tensor : df_mp2-f12-xg::ItmM[Mi]          file = 6 rec = 6000 ofs = 13093857088 len = 1728
+  reserve for tensor : df_mp2-f12-xg::ItmM[Mr]          file = 6 rec = 6000 ofs = 13093858816 len = 23360
+  reserve for tensor : df_mp2-f12-xg::ItmM[Mx]          file = 6 rec = 6000 ofs = 13093882176 len = 103680
+  reserve for tensor : df_mp2-f12-xg::ItmM[RI]          file = 6 rec = 6000 ofs = 13093985856 len = 26880
+  reserve for tensor : df_mp2-f12-xg::ItmM[Ri]          file = 6 rec = 6000 ofs = 13094012736 len = 7680
+  reserve for tensor : df_mp2-f12-xg::ItmM[Rr]          file = 6 rec = 6000 ofs = 13094020416 len = 103680
+  reserve for tensor : df_mp2-f12-xg::ItmM[Rx]          file = 6 rec = 6000 ofs = 13094124096 len = 460800
+  reserve for tensor : df_mp2-f12-xg::ItmN[Ma]          file = 6 rec = 6000 ofs = 13094584896 len = 17280
+  reserve for tensor : df_mp2-f12-xg::ItmN[Mx]          file = 6 rec = 6000 ofs = 13094602176 len = 103680
+  reserve for tensor : df_mp2-f12-xg::ItmN[Ra]          file = 6 rec = 6000 ofs = 13094705856 len = 76800
+  reserve for tensor : df_mp2-f12-xg::ItmN[Rx]          file = 6 rec = 6000 ofs = 13094782656 len = 460800
+  reserve for tensor : df_mp2-f12-xg::Jinv[FF]          file = 6 rec = 6000 ofs = 13095243456 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Jmh[FF]           file = 6 rec = 6000 ofs = 13095514304 len = 270848
+  reserve for tensor : df_mp2-f12-xg::Jmh[KK]           file = 6 rec = 6000 ofs = 13095785152 len = 460800
+  reserve for tensor : df_mp2-f12-xg::K1[rsij]          file = 6 rec = 6000 ofs = 13096245952 len = 373248
+  reserve for tensor : df_mp2-f12-xg::K1[xJij]          file = 6 rec = 6000 ofs = 13096619200 len = 430080
+  reserve for tensor : df_mp2-f12-xg::KFC[MNPQ]         file = 6 rec = 6000 ofs = 13097049280 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::KFC[MNPj]         file = 6 rec = 6000 ofs = 13165073728 len = 5038848
+  reserve for tensor : df_mp2-f12-xg::KFC[MNij]         file = 6 rec = 6000 ofs = 13170112576 len = 373248
+  reserve for tensor : df_mp2-f12-xg::KFC[Mnij]         file = 6 rec = 6000 ofs = 13170485824 len = 27648
+  reserve for tensor : df_mp2-f12-xg::KFC[mnij]         file = 6 rec = 6000 ofs = 13170513472 len = 2048
+  reserve for tensor : df_mp2-f12-xg::KF[mnij]          file = 6 rec = 6000 ofs = 13170515520 len = 2048
+  reserve for tensor : df_mp2-f12-xg::KFf1[MNPQ]        file = 6 rec = 6000 ofs = 13170517568 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::KFf2[MNPQ]        file = 6 rec = 6000 ofs = 13238542016 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::KFf3[MNPQ]        file = 6 rec = 6000 ofs = 13306566464 len = 68024448
+  reserve for tensor : df_mp2-f12-xg::RF[mnij]          file = 6 rec = 6000 ofs = 13374590912 len = 2048
+  reserve for tensor : df_mp2-f12-xg::TF[mnij]          file = 6 rec = 6000 ofs = 13374592960 len = 2048
+  reserve for tensor : df_mp2-f12-xg::VF[mnij]          file = 6 rec = 6000 ofs = 13374595008 len = 2048
+  reserve for tensor : df_mp2-f12-xg::XF[mnij]          file = 6 rec = 6000 ofs = 13374597056 len = 2048
+  reserve for tensor : df_mp2-f12-xg::f[MM]             file = 6 rec = 6000 ofs = 13374599104 len = 23360
+  reserve for tensor : df_mp2-f12-xg::f[RM]             file = 6 rec = 6000 ofs = 13374622464 len = 103680
+  reserve for tensor : df_mp2-f12-xg::f[RR]             file = 6 rec = 6000 ofs = 13374726144 len = 460800
+  reserve for tensor : df_mp2-f12-xg::f[ab]             file = 6 rec = 6000 ofs = 13375186944 len = 12800
+  reserve for tensor : df_mp2-f12-xg::f[rs]             file = 6 rec = 6000 ofs = 13375199744 len = 23360
+  reserve for tensor : df_mp2-f12-xg::f[xb]             file = 6 rec = 6000 ofs = 13375223104 len = 76800
+  reserve for tensor : df_mp2-f12-xg::f[xs]             file = 6 rec = 6000 ofs = 13375299904 len = 103680
+  reserve for tensor : df_mp2-f12-xg::f[xy]             file = 6 rec = 6000 ofs = 13375403584 len = 460800
+  reserve for tensor : df_mp2-f12-xg::k[MM]             file = 6 rec = 6000 ofs = 13375864384 len = 23360
+  reserve for tensor : df_mp2-f12-xg::k[RM]             file = 6 rec = 6000 ofs = 13375887744 len = 103680
+  reserve for tensor : df_mp2-f12-xg::k[RR]             file = 6 rec = 6000 ofs = 13375991424 len = 460800
+  reserve for tensor : df_mp2-f12-xg::n[rs]             file = 6 rec = 6000 ofs = 13376452224 len = 23360
+  reserve for tensor : df_mp2-f12-xg::n[xs]             file = 6 rec = 6000 ofs = 13376475584 len = 103680
+  reserve for tensor : df_mp2-f12-xg::n[xy]             file = 6 rec = 6000 ofs = 13376579264 len = 460800
+ ==== Running InitF12Amplitudes()
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[0,1)x[0,1)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[1,2)x[0,1)  (nSeq = 1)
+    FDiskTensor: store     128 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[2,3)x[0,1)  (nSeq = 1)
+    FDiskTensor: store     256 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[3,4)x[0,1)  (nSeq = 1)
+    FDiskTensor: store     384 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[0,1)x[1,2)  (nSeq = 1)
+    FDiskTensor: store     512 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[1,2)x[1,2)  (nSeq = 1)
+    FDiskTensor: store     640 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[2,3)x[1,2)  (nSeq = 1)
+    FDiskTensor: store     768 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[3,4)x[1,2)  (nSeq = 1)
+    FDiskTensor: store     896 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[0,1)x[2,3)  (nSeq = 1)
+    FDiskTensor: store    1024 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[1,2)x[2,3)  (nSeq = 1)
+    FDiskTensor: store    1152 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[2,3)x[2,3)  (nSeq = 1)
+    FDiskTensor: store    1280 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[3,4)x[2,3)  (nSeq = 1)
+    FDiskTensor: store    1408 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[0,1)x[3,4)  (nSeq = 1)
+    FDiskTensor: store    1536 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[1,2)x[3,4)  (nSeq = 1)
+    FDiskTensor: store    1664 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[2,3)x[3,4)  (nSeq = 1)
+    FDiskTensor: store    1792 (sz 128)
+ FDiskTensor: store df_mp2-f12-xg::TF[mnij] range [0,4)x[0,4)x[3,4)x[3,4)  (nSeq = 1)
+    FDiskTensor: store    1920 (sz 128)
+ J^{-1/2} for MP2FIT basis:     EwMin = 1.082e-04  EwMax = 1.452e+03  Ratio = 7.455e-08
+ FDiskTensor: store df_mp2-f12-xg::Jmh[FF] range [0,8)x[0,8)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 270848)
+ J^{-1/2} for JKFIT basis:      EwMin = 1.284e-05  EwMax = 7.814e+02  Ratio = 1.643e-08
+ FDiskTensor: store df_mp2-f12-xg::Jmh[KK] range [0,9)x[0,9)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 460800)
+ ====================================================
+ = F12-XG CALCULATIONS BEGIN ========================
+ ====================================================
+ ----------------------------------------------------
+ - Getting the basic integrals in AO basis ----------
+ ----------------------------------------------------
+ Fixing algorithm 'f12xg_make_cj' to base VM.
+ Transforming Algorithm: f12xg_make_cj
+ VM-push {
+    VM-push {
+       Load      Tensor: [T30]	IB: []
+       Alloc     Tensor: [T57]	IB: [0,0,0]
+       Alloc     Tensor: [T274]	IB: [0,0]
+       Load      Tensor: [T275]	IB: [0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T357]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Alloc     Tensor: [T58]	IB: [0,0,0]
+       Alloc     Tensor: [T274]	IB: [0,0]
+       Load      Tensor: [T275]	IB: [0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T361]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+    } VM-pop
+ } VM-pop
+ ExecVM Tensor Table:
+    Tensor[0] -> Cabs:Ax
+    Tensor[1] -> Cabs:Rx
+    Tensor[2] -> CoreH:AA
+    Tensor[3] -> CoreH:RA
+    Tensor[4] -> CoreH:RR
+    Tensor[5] -> DiracDelta
+    Tensor[6] -> DiracDelta
+    Tensor[7] -> DiracDelta
+    Tensor[8] -> InternalDelta
+    Tensor[9] -> DiracDelta
+    Tensor[10] -> InternalDelta
+    Tensor[11] -> DiracDelta
+    Tensor[12] -> InternalDelta
+    Tensor[13] -> DiracDelta
+    Tensor[14] -> DiracDelta
+    Tensor[15] -> InternalDelta
+    Tensor[16] -> DiracDelta
+    Tensor[17] -> DiracDelta
+    Tensor[18] -> EDi1
+    Tensor[19] -> EDi2
+    Tensor[20] -> EMp1
+    Tensor[21] -> EMp2
+    Tensor[22] -> Nrm1
+    Tensor[23] -> Nrm2
+    Tensor[24] -> Orb:AI
+    Tensor[25] -> Orb:Ac
+    Tensor[26] -> Orb:Ae
+    Tensor[27] -> Orb:Ar
+    Tensor[28] -> Var1
+    Tensor[29] -> Var2
+    Tensor[30] -> (1.0)
+    Tensor[31] -> f:CC
+    Tensor[32] -> f:aa
+    Tensor[33] -> f:cC
+    Tensor[34] -> f:ca
+    Tensor[35] -> f:cc
+    Tensor[36] -> f:eC
+    Tensor[37] -> f:ea
+    Tensor[38] -> f:ec
+    Tensor[39] -> f:ee
+    Tensor[40] -> g:aa
+    Tensor[41] -> g:ca
+    Tensor[42] -> g:cc
+    Tensor[43] -> g:ea
+    Tensor[44] -> g:ec
+    Tensor[45] -> g:ee
+    Tensor[46] -> h:CC
+    Tensor[47] -> h:aa
+    Tensor[48] -> h:ca
+    Tensor[49] -> h:cc
+    Tensor[50] -> h:ea
+    Tensor[51] -> h:ec
+    Tensor[52] -> h:ee
+    Tensor[53] -> df_mp2-f12-xg::AF[mnij]
+    Tensor[54] -> df_mp2-f12-xg::AmpT2
+    Tensor[55] -> df_mp2-f12-xg::BF[mnij]
+    Tensor[56] -> df_mp2-f12-xg::CF[abij]
+    Tensor[57] -> df_mp2-f12-xg::CJ[MNF]
+    Tensor[58] -> df_mp2-f12-xg::CJ[RNF]
+    Tensor[59] -> df_mp2-f12-xg::DF:Fec
+    Tensor[60] -> df_mp2-f12-xg::DF[FIi]
+    Tensor[61] -> df_mp2-f12-xg::DF[FNi]
+    Tensor[62] -> df_mp2-f12-xg::DF[FSi]
+    Tensor[63] -> df_mp2-f12-xg::DF[Fmi]
+    Tensor[64] -> df_mp2-f12-xg::DF[Fri]
+    Tensor[65] -> df_mp2-f12-xg::DF[Fxi]
+    Tensor[66] -> df_mp2-f12-xg::DFbar[FJi]
+    Tensor[67] -> df_mp2-f12-xg::DFbar[Fmi]
+    Tensor[68] -> df_mp2-f12-xg::DFbar[Fri]
+    Tensor[69] -> df_mp2-f12-xg::DFbar[Fxi]
+    Tensor[70] -> df_mp2-f12-xg::DFt1N[NFi]
+    Tensor[71] -> df_mp2-f12-xg::DFt1N[SFi]
+    Tensor[72] -> df_mp2-f12-xg::DFt1[MFi]
+    Tensor[73] -> df_mp2-f12-xg::DFt1[MKI]
+    Tensor[74] -> df_mp2-f12-xg::DFt1[RKI]
+    Tensor[75] -> df_mp2-f12-xg::DFt2N[FNi]
+    Tensor[76] -> df_mp2-f12-xg::DFt2S[FSi]
+    Tensor[77] -> df_mp2-f12-xg::DFt2[FF]
+    Tensor[78] -> df_mp2-f12-xg::DFt2[FJl]
+    Tensor[79] -> df_mp2-f12-xg::DFt2[FRl]
+    Tensor[80] -> df_mp2-f12-xg::DFt2[Fai]
+    Tensor[81] -> df_mp2-f12-xg::DFt2[Frl]
+    Tensor[82] -> df_mp2-f12-xg::DFt2[Fxl]
+    Tensor[83] -> df_mp2-f12-xg::DFt2[KMI]
+    Tensor[84] -> df_mp2-f12-xg::DFt2[KRI]
+    Tensor[85] -> df_mp2-f12-xg::DFt2m[Fmi]
+    Tensor[86] -> df_mp2-f12-xg::DFtil[Fai]
+    Tensor[87] -> df_mp2-f12-xg::DFtil[Fxi]
+    Tensor[88] -> df_mp2-f12-xg::Dc2F1F1[FF]
+    Tensor[89] -> df_mp2-f12-xg::Dc2F1F2[FF]
+    Tensor[90] -> df_mp2-f12-xg::Dc2F1F3[FF]
+    Tensor[91] -> df_mp2-f12-xg::Dc2F1[FF]
+    Tensor[92] -> df_mp2-f12-xg::Dc2F2F2[FF]
+    Tensor[93] -> df_mp2-f12-xg::Dc2F2F3[FF]
+    Tensor[94] -> df_mp2-f12-xg::Dc2F3F3[FF]
+    Tensor[95] -> df_mp2-f12-xg::Dc2FF[FF]
+    Tensor[96] -> df_mp2-f12-xg::Dc2FT[FF]
+    Tensor[97] -> df_mp2-f12-xg::Dc2K1[FF]
+    Tensor[98] -> df_mp2-f12-xg::Dc2KF[FF]
+    Tensor[99] -> df_mp2-f12-xg::Dl3F1[FIi]
+    Tensor[100] -> df_mp2-f12-xg::Dl3F1[FNi]
+    Tensor[101] -> df_mp2-f12-xg::Dl3F1[FSi]
+    Tensor[102] -> df_mp2-f12-xg::Dl3F1[Fai]
+    Tensor[103] -> df_mp2-f12-xg::Dl3F1[Fri]
+    Tensor[104] -> df_mp2-f12-xg::Dl3F1[Fxi]
+    Tensor[105] -> df_mp2-f12-xg::Dl3F1bar[FJi]
+    Tensor[106] -> df_mp2-f12-xg::Dl3F1bar[Fri]
+    Tensor[107] -> df_mp2-f12-xg::Dl3F1bar[Fxi]
+    Tensor[108] -> df_mp2-f12-xg::Dl3F1til[Fai]
+    Tensor[109] -> df_mp2-f12-xg::Dl3F1til[Fxi]
+    Tensor[110] -> df_mp2-f12-xg::Dl3FF[FNi]
+    Tensor[111] -> df_mp2-f12-xg::Dl3FF[FSi]
+    Tensor[112] -> df_mp2-f12-xg::Dl3FF[Fmi]
+    Tensor[113] -> df_mp2-f12-xg::Dl3FFbar[Fmi]
+    Tensor[114] -> df_mp2-f12-xg::Dl3FT[Fmi]
+    Tensor[115] -> df_mp2-f12-xg::Dl3KF[Fmi]
+    Tensor[116] -> df_mp2-f12-xg::Dr3F1[FIi]
+    Tensor[117] -> df_mp2-f12-xg::Dr3F1[FNi]
+    Tensor[118] -> df_mp2-f12-xg::Dr3F1[FSi]
+    Tensor[119] -> df_mp2-f12-xg::Dr3F1[Fai]
+    Tensor[120] -> df_mp2-f12-xg::Dr3F1[Fri]
+    Tensor[121] -> df_mp2-f12-xg::Dr3F1[Fxi]
+    Tensor[122] -> df_mp2-f12-xg::Dr3F1bar[FJi]
+    Tensor[123] -> df_mp2-f12-xg::Dr3F1bar[Fri]
+    Tensor[124] -> df_mp2-f12-xg::Dr3F1bar[Fxi]
+    Tensor[125] -> df_mp2-f12-xg::Dr3F1til[Fai]
+    Tensor[126] -> df_mp2-f12-xg::Dr3F1til[Fxi]
+    Tensor[127] -> df_mp2-f12-xg::Dr3FF[FNi]
+    Tensor[128] -> df_mp2-f12-xg::Dr3FF[FSi]
+    Tensor[129] -> df_mp2-f12-xg::Dr3FF[Fmi]
+    Tensor[130] -> df_mp2-f12-xg::Dr3FFbar[Fmi]
+    Tensor[131] -> df_mp2-f12-xg::Dr3FT[Fmi]
+    Tensor[132] -> df_mp2-f12-xg::Dr3KF[Fmi]
+    Tensor[133] -> df_mp2-f12-xg::EMp2F12DX[]
+    Tensor[134] -> df_mp2-f12-xg::EMp2F12s[]
+    Tensor[135] -> df_mp2-f12-xg::ERef
+    Tensor[136] -> df_mp2-f12-xg::F1C[MJij]
+    Tensor[137] -> df_mp2-f12-xg::F1C[MNPQ]
+    Tensor[138] -> df_mp2-f12-xg::F1C[MNPb]
+    Tensor[139] -> df_mp2-f12-xg::F1C[MNPj]
+    Tensor[140] -> df_mp2-f12-xg::F1C[MNab]
+    Tensor[141] -> df_mp2-f12-xg::F1C[MNij]
+    Tensor[142] -> df_mp2-f12-xg::F1C[Mbij]
+    Tensor[143] -> df_mp2-f12-xg::F1C[Mjab]
+    Tensor[144] -> df_mp2-f12-xg::F1C[Msij]
+    Tensor[145] -> df_mp2-f12-xg::F1C[Myij]
+    Tensor[146] -> df_mp2-f12-xg::F1C[RJij]
+    Tensor[147] -> df_mp2-f12-xg::F1C[RNPQ]
+    Tensor[148] -> df_mp2-f12-xg::F1C[RNPj]
+    Tensor[149] -> df_mp2-f12-xg::F1C[RNij]
+    Tensor[150] -> df_mp2-f12-xg::F1C[RSPQ]
+    Tensor[151] -> df_mp2-f12-xg::F1C[RSPj]
+    Tensor[152] -> df_mp2-f12-xg::F1C[RSij]
+    Tensor[153] -> df_mp2-f12-xg::F1C[Rbij]
+    Tensor[154] -> df_mp2-f12-xg::F1C[Rrij]
+    Tensor[155] -> df_mp2-f12-xg::F1C[Ryij]
+    Tensor[156] -> df_mp2-f12-xg::F1C[abij]
+    Tensor[157] -> df_mp2-f12-xg::F1C[ijab]
+    Tensor[158] -> df_mp2-f12-xg::F1C[rJij]
+    Tensor[159] -> df_mp2-f12-xg::F1C[rsij]
+    Tensor[160] -> df_mp2-f12-xg::F1C[xJij]
+    Tensor[161] -> df_mp2-f12-xg::F1C[xbij]
+    Tensor[162] -> df_mp2-f12-xg::F1C[xrij]
+    Tensor[163] -> df_mp2-f12-xg::F1C[xyij]
+    Tensor[164] -> df_mp2-f12-xg::F1F1[MNPQ]
+    Tensor[165] -> df_mp2-f12-xg::F1F1[RNPQ]
+    Tensor[166] -> df_mp2-f12-xg::F1F1[rNPQ]
+    Tensor[167] -> df_mp2-f12-xg::F1F1[xNPQ]
+    Tensor[168] -> df_mp2-f12-xg::F1F1bar[MNPQ]
+    Tensor[169] -> df_mp2-f12-xg::F1F1barint[MNPQ]
+    Tensor[170] -> df_mp2-f12-xg::F1F2[MNPQ]
+    Tensor[171] -> df_mp2-f12-xg::F1F2[RNPQ]
+    Tensor[172] -> df_mp2-f12-xg::F1F2[rNPQ]
+    Tensor[173] -> df_mp2-f12-xg::F1F2[xNPQ]
+    Tensor[174] -> df_mp2-f12-xg::F1F2bar[MNPQ]
+    Tensor[175] -> df_mp2-f12-xg::F1F2barint[MNPQ]
+    Tensor[176] -> df_mp2-f12-xg::F1F3[MNPQ]
+    Tensor[177] -> df_mp2-f12-xg::F1F3[RNPQ]
+    Tensor[178] -> df_mp2-f12-xg::F1F3[rNPQ]
+    Tensor[179] -> df_mp2-f12-xg::F1F3[xNPQ]
+    Tensor[180] -> df_mp2-f12-xg::F1F3bar[MNPQ]
+    Tensor[181] -> df_mp2-f12-xg::F1F3barint[MNPQ]
+    Tensor[182] -> df_mp2-f12-xg::F1T1[MNPQ]
+    Tensor[183] -> df_mp2-f12-xg::F1T2[MNPQ]
+    Tensor[184] -> df_mp2-f12-xg::F1T3[MNPQ]
+    Tensor[185] -> df_mp2-f12-xg::F1[abij]
+    Tensor[186] -> df_mp2-f12-xg::F1[rsij]
+    Tensor[187] -> df_mp2-f12-xg::F1[xJij]
+    Tensor[188] -> df_mp2-f12-xg::F1[xbij]
+    Tensor[189] -> df_mp2-f12-xg::F1[xyij]
+    Tensor[190] -> df_mp2-f12-xg::F1bar[rsij]
+    Tensor[191] -> df_mp2-f12-xg::F1bar[xJij]
+    Tensor[192] -> df_mp2-f12-xg::F1til[xbij]
+    Tensor[193] -> df_mp2-f12-xg::F1til[xyij]
+    Tensor[194] -> df_mp2-f12-xg::F2F2[MNPQ]
+    Tensor[195] -> df_mp2-f12-xg::F2F2[RNPQ]
+    Tensor[196] -> df_mp2-f12-xg::F2F2[rNPQ]
+    Tensor[197] -> df_mp2-f12-xg::F2F2[xNPQ]
+    Tensor[198] -> df_mp2-f12-xg::F2F2bar[MNPQ]
+    Tensor[199] -> df_mp2-f12-xg::F2F2barint[MNPQ]
+    Tensor[200] -> df_mp2-f12-xg::F2F3[MNPQ]
+    Tensor[201] -> df_mp2-f12-xg::F2F3[RNPQ]
+    Tensor[202] -> df_mp2-f12-xg::F2F3[rNPQ]
+    Tensor[203] -> df_mp2-f12-xg::F2F3[xNPQ]
+    Tensor[204] -> df_mp2-f12-xg::F2F3bar[MNPQ]
+    Tensor[205] -> df_mp2-f12-xg::F2F3barint[MNPQ]
+    Tensor[206] -> df_mp2-f12-xg::F2T2[MNPQ]
+    Tensor[207] -> df_mp2-f12-xg::F2T3[MNPQ]
+    Tensor[208] -> df_mp2-f12-xg::F3F3[MNPQ]
+    Tensor[209] -> df_mp2-f12-xg::F3F3[RNPQ]
+    Tensor[210] -> df_mp2-f12-xg::F3F3[rNPQ]
+    Tensor[211] -> df_mp2-f12-xg::F3F3[xNPQ]
+    Tensor[212] -> df_mp2-f12-xg::F3F3bar[MNPQ]
+    Tensor[213] -> df_mp2-f12-xg::F3F3barint[MNPQ]
+    Tensor[214] -> df_mp2-f12-xg::F3T3[MNPQ]
+    Tensor[215] -> df_mp2-f12-xg::FFC[MNPQ]
+    Tensor[216] -> df_mp2-f12-xg::FFC[MNPj]
+    Tensor[217] -> df_mp2-f12-xg::FFC[MNij]
+    Tensor[218] -> df_mp2-f12-xg::FFC[Mnij]
+    Tensor[219] -> df_mp2-f12-xg::FFC[mnij]
+    Tensor[220] -> df_mp2-f12-xg::FF[mnij]
+    Tensor[221] -> df_mp2-f12-xg::FFbarC[MNPQ]
+    Tensor[222] -> df_mp2-f12-xg::FFbarC[MNPj]
+    Tensor[223] -> df_mp2-f12-xg::FFbarC[MNij]
+    Tensor[224] -> df_mp2-f12-xg::FFbarC[Mnij]
+    Tensor[225] -> df_mp2-f12-xg::FFbarC[mnij]
+    Tensor[226] -> df_mp2-f12-xg::FFbar[mnij]
+    Tensor[227] -> df_mp2-f12-xg::FInt[MNF]
+    Tensor[228] -> df_mp2-f12-xg::FInt[RNF]
+    Tensor[229] -> df_mp2-f12-xg::FTC[MNPQ]
+    Tensor[230] -> df_mp2-f12-xg::FTC[MNPj]
+    Tensor[231] -> df_mp2-f12-xg::FTC[MNij]
+    Tensor[232] -> df_mp2-f12-xg::FTC[Mnij]
+    Tensor[233] -> df_mp2-f12-xg::FTC[mnij]
+    Tensor[234] -> df_mp2-f12-xg::FT[mnij]
+    Tensor[235] -> df_mp2-f12-xg::Ff1[MNPQ]
+    Tensor[236] -> df_mp2-f12-xg::Ff1[RNPQ]
+    Tensor[237] -> df_mp2-f12-xg::Ff1[RSPQ]
+    Tensor[238] -> df_mp2-f12-xg::Ff2[MNPQ]
+    Tensor[239] -> df_mp2-f12-xg::Ff2[RNPQ]
+    Tensor[240] -> df_mp2-f12-xg::Ff2[RSPQ]
+    Tensor[241] -> df_mp2-f12-xg::Ff3[MNPQ]
+    Tensor[242] -> df_mp2-f12-xg::Ff3[RNPQ]
+    Tensor[243] -> df_mp2-f12-xg::Ff3[RSPQ]
+    Tensor[244] -> df_mp2-f12-xg::GammaC[K]
+    Tensor[245] -> df_mp2-f12-xg::GammaT[K]
+    Tensor[246] -> df_mp2-f12-xg::Gamma[K]
+    Tensor[247] -> df_mp2-f12-xg::Gamma[MN]
+    Tensor[248] -> df_mp2-f12-xg::Har[MM]
+    Tensor[249] -> df_mp2-f12-xg::Har[Mr]
+    Tensor[250] -> df_mp2-f12-xg::Har[Mx]
+    Tensor[251] -> df_mp2-f12-xg::Har[RM]
+    Tensor[252] -> df_mp2-f12-xg::Har[RR]
+    Tensor[253] -> df_mp2-f12-xg::Har[ij]
+    Tensor[254] -> df_mp2-f12-xg::Har[rI]
+    Tensor[255] -> df_mp2-f12-xg::Har[ri]
+    Tensor[256] -> df_mp2-f12-xg::Har[rs]
+    Tensor[257] -> df_mp2-f12-xg::Har[xI]
+    Tensor[258] -> df_mp2-f12-xg::Har[xb]
+    Tensor[259] -> df_mp2-f12-xg::Har[xi]
+    Tensor[260] -> df_mp2-f12-xg::Har[xs]
+    Tensor[261] -> df_mp2-f12-xg::Har[xy]
+    Tensor[262] -> df_mp2-f12-xg::ItmM[MI]
+    Tensor[263] -> df_mp2-f12-xg::ItmM[Mi]
+    Tensor[264] -> df_mp2-f12-xg::ItmM[Mr]
+    Tensor[265] -> df_mp2-f12-xg::ItmM[Mx]
+    Tensor[266] -> df_mp2-f12-xg::ItmM[RI]
+    Tensor[267] -> df_mp2-f12-xg::ItmM[Ri]
+    Tensor[268] -> df_mp2-f12-xg::ItmM[Rr]
+    Tensor[269] -> df_mp2-f12-xg::ItmM[Rx]
+    Tensor[270] -> df_mp2-f12-xg::ItmN[Ma]
+    Tensor[271] -> df_mp2-f12-xg::ItmN[Mx]
+    Tensor[272] -> df_mp2-f12-xg::ItmN[Ra]
+    Tensor[273] -> df_mp2-f12-xg::ItmN[Rx]
+    Tensor[274] -> df_mp2-f12-xg::Jinv[FF]
+    Tensor[275] -> df_mp2-f12-xg::Jmh[FF]
+    Tensor[276] -> df_mp2-f12-xg::Jmh[KK]
+    Tensor[277] -> df_mp2-f12-xg::K1[rsij]
+    Tensor[278] -> df_mp2-f12-xg::K1[xJij]
+    Tensor[279] -> df_mp2-f12-xg::K:eecc
+    Tensor[280] -> df_mp2-f12-xg::KFC[MNPQ]
+    Tensor[281] -> df_mp2-f12-xg::KFC[MNPj]
+    Tensor[282] -> df_mp2-f12-xg::KFC[MNij]
+    Tensor[283] -> df_mp2-f12-xg::KFC[Mnij]
+    Tensor[284] -> df_mp2-f12-xg::KFC[mnij]
+    Tensor[285] -> df_mp2-f12-xg::KF[mnij]
+    Tensor[286] -> df_mp2-f12-xg::KFf1[MNPQ]
+    Tensor[287] -> df_mp2-f12-xg::KFf2[MNPQ]
+    Tensor[288] -> df_mp2-f12-xg::KFf3[MNPQ]
+    Tensor[289] -> df_mp2-f12-xg::RF[mnij]
+    Tensor[290] -> df_mp2-f12-xg::TF12[aaii]
+    Tensor[291] -> df_mp2-f12-xg::TF[mnij]
+    Tensor[292] -> df_mp2-f12-xg::Tmp[mnij]
+    Tensor[293] -> df_mp2-f12-xg::VF[mnij]
+    Tensor[294] -> df_mp2-f12-xg::XF[mnij]
+    Tensor[295] -> df_mp2-f12-xg::f[MM]
+    Tensor[296] -> df_mp2-f12-xg::f[RM]
+    Tensor[297] -> df_mp2-f12-xg::f[RR]
+    Tensor[298] -> df_mp2-f12-xg::f[ab]
+    Tensor[299] -> df_mp2-f12-xg::f[rI]
+    Tensor[300] -> df_mp2-f12-xg::f[ri]
+    Tensor[301] -> df_mp2-f12-xg::f[rs]
+    Tensor[302] -> df_mp2-f12-xg::f[xI]
+    Tensor[303] -> df_mp2-f12-xg::f[xb]
+    Tensor[304] -> df_mp2-f12-xg::f[xi]
+    Tensor[305] -> df_mp2-f12-xg::f[xs]
+    Tensor[306] -> df_mp2-f12-xg::f[xy]
+    Tensor[307] -> (F|F12|F)
+    Tensor[308] -> (AA|F12|F)
+    Tensor[309] -> (RA|F12|F)
+    Tensor[310] -> (F|F12|F)
+    Tensor[311] -> (AA|F12|F)
+    Tensor[312] -> (RA|F12|F)
+    Tensor[313] -> (F|F12|F)
+    Tensor[314] -> (AA|F12|F)
+    Tensor[315] -> (RA|F12|F)
+    Tensor[316] -> (F|[[Del,F],F]|F)
+    Tensor[317] -> (AA|[[Del,F],F]|F)
+    Tensor[318] -> (AR|[[Del,F],F]|F)
+    Tensor[319] -> (F|[[Del,F1],F2]|F)
+    Tensor[320] -> (AA|[[Del,F1],F2]|F)
+    Tensor[321] -> (AR|[[Del,F1],F2]|F)
+    Tensor[322] -> (F|[[Del,F1],F2]|F)
+    Tensor[323] -> (AA|[[Del,F1],F2]|F)
+    Tensor[324] -> (AR|[[Del,F1],F2]|F)
+    Tensor[325] -> (F|F12|F)
+    Tensor[326] -> (AA|F12|F)
+    Tensor[327] -> (AR|F12|F)
+    Tensor[328] -> (RA|F12|F)
+    Tensor[329] -> (F|F12|F)
+    Tensor[330] -> (AA|F12|F)
+    Tensor[331] -> (RA|F12|F)
+    Tensor[332] -> (F|F12|F)
+    Tensor[333] -> (AA|F12|F)
+    Tensor[334] -> (RA|F12|F)
+    Tensor[335] -> (F|[[Del,F],F]|F)
+    Tensor[336] -> (AA|[[Del,F],F]|F)
+    Tensor[337] -> (AR|[[Del,F],F]|F)
+    Tensor[338] -> (F|[[Del,F1],F2]|F)
+    Tensor[339] -> (AA|[[Del,F1],F2]|F)
+    Tensor[340] -> (AR|[[Del,F1],F2]|F)
+    Tensor[341] -> (F|F12|F)
+    Tensor[342] -> (AA|F12|F)
+    Tensor[343] -> (AR|F12|F)
+    Tensor[344] -> (RA|F12|F)
+    Tensor[345] -> (F|F12|F)
+    Tensor[346] -> (AA|F12|F)
+    Tensor[347] -> (RA|F12|F)
+    Tensor[348] -> (F|[[Del,F],F]|F)
+    Tensor[349] -> (AA|[[Del,F],F]|F)
+    Tensor[350] -> (AR|[[Del,F],F]|F)
+    Tensor[351] -> (F|F12|F)
+    Tensor[352] -> (AA|F12|F)
+    Tensor[353] -> (AR|F12|F)
+    Tensor[354] -> (RA|F12|F)
+    Tensor[355] -> (F|r^-1|F)
+    Tensor[356] -> (K|r^-1|K)
+    Tensor[357] -> (AA|r^-1|F)
+    Tensor[358] -> (AA|r^-1|K)
+    Tensor[359] -> (AR|r^-1|K)
+    Tensor[360] -> (AR|r^-1|F)
+    Tensor[361] -> (RA|r^-1|F)
+    Tensor[362] -> (RR|r^-1|K)
+    Tensor[363] -> (F|F12/r|F)
+    Tensor[364] -> (AA|F12/r|F)
+    Tensor[365] -> (F|F12/r|F)
+    Tensor[366] -> (AA|F12/r|F)
+    Tensor[367] -> (F|F12/r|F)
+    Tensor[368] -> (AA|F12/r|F)
+    Tensor[369] -> df_mp2-f12-xg::j[MM]
+    Tensor[370] -> df_mp2-f12-xg::j[RM]
+    Tensor[371] -> df_mp2-f12-xg::j[RR]
+    Tensor[372] -> df_mp2-f12-xg::k[MM]
+    Tensor[373] -> df_mp2-f12-xg::k[RM]
+    Tensor[374] -> df_mp2-f12-xg::k[RR]
+    Tensor[375] -> df_mp2-f12-xg::n[rI]
+    Tensor[376] -> df_mp2-f12-xg::n[ra]
+    Tensor[377] -> df_mp2-f12-xg::n[ri]
+    Tensor[378] -> df_mp2-f12-xg::n[rs]
+    Tensor[379] -> df_mp2-f12-xg::n[xI]
+    Tensor[380] -> df_mp2-f12-xg::n[xa]
+    Tensor[381] -> df_mp2-f12-xg::n[xi]
+    Tensor[382] -> df_mp2-f12-xg::n[xs]
+    Tensor[383] -> df_mp2-f12-xg::n[xy]
+    Tensor[384] -> df_mp2-f12-xg::x[Ma]
+    Tensor[385] -> df_mp2-f12-xg::x[Mi]
+    Tensor[386] -> df_mp2-f12-xg::x[Mr]
+    Tensor[387] -> df_mp2-f12-xg::x[Mx]
+    Tensor[388] -> df_mp2-f12-xg::x[Rr]
+    Tensor[389] -> df_mp2-f12-xg::x[Rx]
+ Executing Algorithm: f12xg_make_cj
+ Load/Alloc: iSymbol=30 [(1.0)]  nSymbols=1
+ Load/Alloc: iSymbol=57 [df_mp2-f12-xg::CJ[MNF]]  nSymbols=2
+ Load/Alloc: iSymbol=274 [df_mp2-f12-xg::Jinv[FF]]  nSymbols=3
+ FDiskTensor: load df_mp2-f12-xg::Jmh[FF] range [0,8)x[0,8)  (nSeq = 1)
+    FDiskTensor: load        0 (sz 270848)
+ Load/Alloc: iSymbol=275 [df_mp2-f12-xg::Jmh[FF]]  nSymbols=4
+ Contract  {-2} += 1 * {-1} {-1} { De:13 Co:00 } { IB: {-1}:[0,0] {-1}:[0,0] }
+ Contract  {-2} += 1 * {-1} {-1} { De:13 Co:00 } { IB: {-1}:[0,0] {-1}:[0,0] }
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Jmh[FF]]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Jinv[FF][0,0]   memory: 274 kb
+ Load/Alloc: iSymbol=357 [(AA|r^-1|F)]  nSymbols=4
+ Contract  {-3} += 1 * {-1} {-2} { De:014 Co:20 } { IB: {-1}:[0,0,0] {-2}:[0,0] }
+ Contract  {-3} += 1 * {-1} {-2} { De:014 Co:20 } { IB: {-1}:[0,0,0] {-2}:[0,0] }
+ Store/Drop: iSymbol=-1 [(AA|r^-1|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Jinv[FF][0,0]   memory: 274 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Jinv[FF]]  nSymbols=3
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -2] (1.0)[]                        memory: 0 kb
+   [ -1] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::CJ[MNF]]  nSymbols=2
+ FDiskTensor: store df_mp2-f12-xg::CJ[MNF] range [0,3)x[0,3)x[0,8)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 4292352)
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -1] (1.0)[]                        memory: 0 kb
+ Load/Alloc: iSymbol=58 [df_mp2-f12-xg::CJ[RNF]]  nSymbols=2
+ Load/Alloc: iSymbol=274 [df_mp2-f12-xg::Jinv[FF]]  nSymbols=3
+ FDiskTensor: load df_mp2-f12-xg::Jmh[FF] range [0,8)x[0,8)  (nSeq = 1)
+    FDiskTensor: load        0 (sz 270848)
+ Load/Alloc: iSymbol=275 [df_mp2-f12-xg::Jmh[FF]]  nSymbols=4
+ Contract  {-2} += 1 * {-1} {-1} { De:13 Co:00 } { IB: {-1}:[0,0] {-1}:[0,0] }
+ Contract  {-2} += 1 * {-1} {-1} { De:13 Co:00 } { IB: {-1}:[0,0] {-1}:[0,0] }
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Jmh[FF]]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[RNF][0,0,0]  memory: 18662 kb
+   [ -1] df_mp2-f12-xg::Jinv[FF][0,0]   memory: 274 kb
+ Load/Alloc: iSymbol=361 [(RA|r^-1|F)]  nSymbols=4
+ Contract  {-3} += 1 * {-1} {-2} { De:014 Co:20 } { IB: {-1}:[0,0,0] {-2}:[0,0] }
+ Contract  {-3} += 1 * {-1} {-2} { De:014 Co:20 } { IB: {-1}:[0,0,0] {-2}:[0,0] }
+ Store/Drop: iSymbol=-1 [(RA|r^-1|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[RNF][0,0,0]  memory: 18662 kb
+   [ -1] df_mp2-f12-xg::Jinv[FF][0,0]   memory: 274 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Jinv[FF]]  nSymbols=3
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -2] (1.0)[]                        memory: 0 kb
+   [ -1] df_mp2-f12-xg::CJ[RNF][0,0,0]  memory: 18662 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::CJ[RNF]]  nSymbols=2
+ FDiskTensor: store df_mp2-f12-xg::CJ[RNF] range [0,9)x[0,3)x[0,8)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 19077120)
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -1] (1.0)[]                        memory: 0 kb
+ Store/Drop: iSymbol=-1 [(1.0)]  nSymbols=1
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+ Fixing algorithm 'f12xg_make_Ffi_intermmediates' to base VM.
+ Transforming Algorithm: f12xg_make_Ffi_intermmediates
+ VM-push {
+    VM-push {
+       Load      Tensor: [T30]	IB: []
+       Load      Tensor: [T57]	IB: [0,0,0]
+       Alloc     Tensor: [T235]	IB: [0,0,0,0]
+       Load      Tensor: [T326]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T325]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Alloc     Tensor: [T238]	IB: [0,0,0,0]
+       Load      Tensor: [T342]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T341]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Alloc     Tensor: [T241]	IB: [0,0,0,0]
+       Load      Tensor: [T352]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T351]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Load      Tensor: [T58]	IB: [0,0,0]
+       Load      Tensor: [T328]	IB: [0,0,0]
+       Alloc     Tensor: [T236]	IB: [0,0,0,0]
+       Load      Tensor: [T326]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T325]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T344]	IB: [0,0,0]
+       Alloc     Tensor: [T239]	IB: [0,0,0,0]
+       Load      Tensor: [T342]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T341]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T354]	IB: [0,0,0]
+       Alloc     Tensor: [T242]	IB: [0,0,0,0]
+       Load      Tensor: [T352]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T351]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T328]	IB: [0,0,0]
+       Alloc     Tensor: [T237]	IB: [0,0,0,0]
+       Load      Tensor: [T326]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T325]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T344]	IB: [0,0,0]
+       Alloc     Tensor: [T240]	IB: [0,0,0,0]
+       Load      Tensor: [T342]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T341]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T354]	IB: [0,0,0]
+       Alloc     Tensor: [T243]	IB: [0,0,0,0]
+       Load      Tensor: [T352]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T351]	IB: [0,0]
+       Alloc     Tensor: [T228]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Alloc     Tensor: [T286]	IB: [0,0,0,0]
+       Load      Tensor: [T364]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T363]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Alloc     Tensor: [T287]	IB: [0,0,0,0]
+       Load      Tensor: [T366]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T365]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Alloc     Tensor: [T288]	IB: [0,0,0,0]
+       Load      Tensor: [T368]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Load      Tensor: [T367]	IB: [0,0]
+       Alloc     Tensor: [T227]	IB: [0,0,0]
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Store     Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+       Drop      Symbol: [-1]	IB: []
+    } VM-pop
+ } VM-pop
+ ExecVM Tensor Table:
+    Tensor[0] -> Cabs:Ax
+    Tensor[1] -> Cabs:Rx
+    Tensor[2] -> CoreH:AA
+    Tensor[3] -> CoreH:RA
+    Tensor[4] -> CoreH:RR
+    Tensor[5] -> DiracDelta
+    Tensor[6] -> DiracDelta
+    Tensor[7] -> DiracDelta
+    Tensor[8] -> InternalDelta
+    Tensor[9] -> DiracDelta
+    Tensor[10] -> InternalDelta
+    Tensor[11] -> DiracDelta
+    Tensor[12] -> InternalDelta
+    Tensor[13] -> DiracDelta
+    Tensor[14] -> DiracDelta
+    Tensor[15] -> InternalDelta
+    Tensor[16] -> DiracDelta
+    Tensor[17] -> DiracDelta
+    Tensor[18] -> EDi1
+    Tensor[19] -> EDi2
+    Tensor[20] -> EMp1
+    Tensor[21] -> EMp2
+    Tensor[22] -> Nrm1
+    Tensor[23] -> Nrm2
+    Tensor[24] -> Orb:AI
+    Tensor[25] -> Orb:Ac
+    Tensor[26] -> Orb:Ae
+    Tensor[27] -> Orb:Ar
+    Tensor[28] -> Var1
+    Tensor[29] -> Var2
+    Tensor[30] -> (1.0)
+    Tensor[31] -> f:CC
+    Tensor[32] -> f:aa
+    Tensor[33] -> f:cC
+    Tensor[34] -> f:ca
+    Tensor[35] -> f:cc
+    Tensor[36] -> f:eC
+    Tensor[37] -> f:ea
+    Tensor[38] -> f:ec
+    Tensor[39] -> f:ee
+    Tensor[40] -> g:aa
+    Tensor[41] -> g:ca
+    Tensor[42] -> g:cc
+    Tensor[43] -> g:ea
+    Tensor[44] -> g:ec
+    Tensor[45] -> g:ee
+    Tensor[46] -> h:CC
+    Tensor[47] -> h:aa
+    Tensor[48] -> h:ca
+    Tensor[49] -> h:cc
+    Tensor[50] -> h:ea
+    Tensor[51] -> h:ec
+    Tensor[52] -> h:ee
+    Tensor[53] -> df_mp2-f12-xg::AF[mnij]
+    Tensor[54] -> df_mp2-f12-xg::AmpT2
+    Tensor[55] -> df_mp2-f12-xg::BF[mnij]
+    Tensor[56] -> df_mp2-f12-xg::CF[abij]
+    Tensor[57] -> df_mp2-f12-xg::CJ[MNF]
+    Tensor[58] -> df_mp2-f12-xg::CJ[RNF]
+    Tensor[59] -> df_mp2-f12-xg::DF:Fec
+    Tensor[60] -> df_mp2-f12-xg::DF[FIi]
+    Tensor[61] -> df_mp2-f12-xg::DF[FNi]
+    Tensor[62] -> df_mp2-f12-xg::DF[FSi]
+    Tensor[63] -> df_mp2-f12-xg::DF[Fmi]
+    Tensor[64] -> df_mp2-f12-xg::DF[Fri]
+    Tensor[65] -> df_mp2-f12-xg::DF[Fxi]
+    Tensor[66] -> df_mp2-f12-xg::DFbar[FJi]
+    Tensor[67] -> df_mp2-f12-xg::DFbar[Fmi]
+    Tensor[68] -> df_mp2-f12-xg::DFbar[Fri]
+    Tensor[69] -> df_mp2-f12-xg::DFbar[Fxi]
+    Tensor[70] -> df_mp2-f12-xg::DFt1N[NFi]
+    Tensor[71] -> df_mp2-f12-xg::DFt1N[SFi]
+    Tensor[72] -> df_mp2-f12-xg::DFt1[MFi]
+    Tensor[73] -> df_mp2-f12-xg::DFt1[MKI]
+    Tensor[74] -> df_mp2-f12-xg::DFt1[RKI]
+    Tensor[75] -> df_mp2-f12-xg::DFt2N[FNi]
+    Tensor[76] -> df_mp2-f12-xg::DFt2S[FSi]
+    Tensor[77] -> df_mp2-f12-xg::DFt2[FF]
+    Tensor[78] -> df_mp2-f12-xg::DFt2[FJl]
+    Tensor[79] -> df_mp2-f12-xg::DFt2[FRl]
+    Tensor[80] -> df_mp2-f12-xg::DFt2[Fai]
+    Tensor[81] -> df_mp2-f12-xg::DFt2[Frl]
+    Tensor[82] -> df_mp2-f12-xg::DFt2[Fxl]
+    Tensor[83] -> df_mp2-f12-xg::DFt2[KMI]
+    Tensor[84] -> df_mp2-f12-xg::DFt2[KRI]
+    Tensor[85] -> df_mp2-f12-xg::DFt2m[Fmi]
+    Tensor[86] -> df_mp2-f12-xg::DFtil[Fai]
+    Tensor[87] -> df_mp2-f12-xg::DFtil[Fxi]
+    Tensor[88] -> df_mp2-f12-xg::Dc2F1F1[FF]
+    Tensor[89] -> df_mp2-f12-xg::Dc2F1F2[FF]
+    Tensor[90] -> df_mp2-f12-xg::Dc2F1F3[FF]
+    Tensor[91] -> df_mp2-f12-xg::Dc2F1[FF]
+    Tensor[92] -> df_mp2-f12-xg::Dc2F2F2[FF]
+    Tensor[93] -> df_mp2-f12-xg::Dc2F2F3[FF]
+    Tensor[94] -> df_mp2-f12-xg::Dc2F3F3[FF]
+    Tensor[95] -> df_mp2-f12-xg::Dc2FF[FF]
+    Tensor[96] -> df_mp2-f12-xg::Dc2FT[FF]
+    Tensor[97] -> df_mp2-f12-xg::Dc2K1[FF]
+    Tensor[98] -> df_mp2-f12-xg::Dc2KF[FF]
+    Tensor[99] -> df_mp2-f12-xg::Dl3F1[FIi]
+    Tensor[100] -> df_mp2-f12-xg::Dl3F1[FNi]
+    Tensor[101] -> df_mp2-f12-xg::Dl3F1[FSi]
+    Tensor[102] -> df_mp2-f12-xg::Dl3F1[Fai]
+    Tensor[103] -> df_mp2-f12-xg::Dl3F1[Fri]
+    Tensor[104] -> df_mp2-f12-xg::Dl3F1[Fxi]
+    Tensor[105] -> df_mp2-f12-xg::Dl3F1bar[FJi]
+    Tensor[106] -> df_mp2-f12-xg::Dl3F1bar[Fri]
+    Tensor[107] -> df_mp2-f12-xg::Dl3F1bar[Fxi]
+    Tensor[108] -> df_mp2-f12-xg::Dl3F1til[Fai]
+    Tensor[109] -> df_mp2-f12-xg::Dl3F1til[Fxi]
+    Tensor[110] -> df_mp2-f12-xg::Dl3FF[FNi]
+    Tensor[111] -> df_mp2-f12-xg::Dl3FF[FSi]
+    Tensor[112] -> df_mp2-f12-xg::Dl3FF[Fmi]
+    Tensor[113] -> df_mp2-f12-xg::Dl3FFbar[Fmi]
+    Tensor[114] -> df_mp2-f12-xg::Dl3FT[Fmi]
+    Tensor[115] -> df_mp2-f12-xg::Dl3KF[Fmi]
+    Tensor[116] -> df_mp2-f12-xg::Dr3F1[FIi]
+    Tensor[117] -> df_mp2-f12-xg::Dr3F1[FNi]
+    Tensor[118] -> df_mp2-f12-xg::Dr3F1[FSi]
+    Tensor[119] -> df_mp2-f12-xg::Dr3F1[Fai]
+    Tensor[120] -> df_mp2-f12-xg::Dr3F1[Fri]
+    Tensor[121] -> df_mp2-f12-xg::Dr3F1[Fxi]
+    Tensor[122] -> df_mp2-f12-xg::Dr3F1bar[FJi]
+    Tensor[123] -> df_mp2-f12-xg::Dr3F1bar[Fri]
+    Tensor[124] -> df_mp2-f12-xg::Dr3F1bar[Fxi]
+    Tensor[125] -> df_mp2-f12-xg::Dr3F1til[Fai]
+    Tensor[126] -> df_mp2-f12-xg::Dr3F1til[Fxi]
+    Tensor[127] -> df_mp2-f12-xg::Dr3FF[FNi]
+    Tensor[128] -> df_mp2-f12-xg::Dr3FF[FSi]
+    Tensor[129] -> df_mp2-f12-xg::Dr3FF[Fmi]
+    Tensor[130] -> df_mp2-f12-xg::Dr3FFbar[Fmi]
+    Tensor[131] -> df_mp2-f12-xg::Dr3FT[Fmi]
+    Tensor[132] -> df_mp2-f12-xg::Dr3KF[Fmi]
+    Tensor[133] -> df_mp2-f12-xg::EMp2F12DX[]
+    Tensor[134] -> df_mp2-f12-xg::EMp2F12s[]
+    Tensor[135] -> df_mp2-f12-xg::ERef
+    Tensor[136] -> df_mp2-f12-xg::F1C[MJij]
+    Tensor[137] -> df_mp2-f12-xg::F1C[MNPQ]
+    Tensor[138] -> df_mp2-f12-xg::F1C[MNPb]
+    Tensor[139] -> df_mp2-f12-xg::F1C[MNPj]
+    Tensor[140] -> df_mp2-f12-xg::F1C[MNab]
+    Tensor[141] -> df_mp2-f12-xg::F1C[MNij]
+    Tensor[142] -> df_mp2-f12-xg::F1C[Mbij]
+    Tensor[143] -> df_mp2-f12-xg::F1C[Mjab]
+    Tensor[144] -> df_mp2-f12-xg::F1C[Msij]
+    Tensor[145] -> df_mp2-f12-xg::F1C[Myij]
+    Tensor[146] -> df_mp2-f12-xg::F1C[RJij]
+    Tensor[147] -> df_mp2-f12-xg::F1C[RNPQ]
+    Tensor[148] -> df_mp2-f12-xg::F1C[RNPj]
+    Tensor[149] -> df_mp2-f12-xg::F1C[RNij]
+    Tensor[150] -> df_mp2-f12-xg::F1C[RSPQ]
+    Tensor[151] -> df_mp2-f12-xg::F1C[RSPj]
+    Tensor[152] -> df_mp2-f12-xg::F1C[RSij]
+    Tensor[153] -> df_mp2-f12-xg::F1C[Rbij]
+    Tensor[154] -> df_mp2-f12-xg::F1C[Rrij]
+    Tensor[155] -> df_mp2-f12-xg::F1C[Ryij]
+    Tensor[156] -> df_mp2-f12-xg::F1C[abij]
+    Tensor[157] -> df_mp2-f12-xg::F1C[ijab]
+    Tensor[158] -> df_mp2-f12-xg::F1C[rJij]
+    Tensor[159] -> df_mp2-f12-xg::F1C[rsij]
+    Tensor[160] -> df_mp2-f12-xg::F1C[xJij]
+    Tensor[161] -> df_mp2-f12-xg::F1C[xbij]
+    Tensor[162] -> df_mp2-f12-xg::F1C[xrij]
+    Tensor[163] -> df_mp2-f12-xg::F1C[xyij]
+    Tensor[164] -> df_mp2-f12-xg::F1F1[MNPQ]
+    Tensor[165] -> df_mp2-f12-xg::F1F1[RNPQ]
+    Tensor[166] -> df_mp2-f12-xg::F1F1[rNPQ]
+    Tensor[167] -> df_mp2-f12-xg::F1F1[xNPQ]
+    Tensor[168] -> df_mp2-f12-xg::F1F1bar[MNPQ]
+    Tensor[169] -> df_mp2-f12-xg::F1F1barint[MNPQ]
+    Tensor[170] -> df_mp2-f12-xg::F1F2[MNPQ]
+    Tensor[171] -> df_mp2-f12-xg::F1F2[RNPQ]
+    Tensor[172] -> df_mp2-f12-xg::F1F2[rNPQ]
+    Tensor[173] -> df_mp2-f12-xg::F1F2[xNPQ]
+    Tensor[174] -> df_mp2-f12-xg::F1F2bar[MNPQ]
+    Tensor[175] -> df_mp2-f12-xg::F1F2barint[MNPQ]
+    Tensor[176] -> df_mp2-f12-xg::F1F3[MNPQ]
+    Tensor[177] -> df_mp2-f12-xg::F1F3[RNPQ]
+    Tensor[178] -> df_mp2-f12-xg::F1F3[rNPQ]
+    Tensor[179] -> df_mp2-f12-xg::F1F3[xNPQ]
+    Tensor[180] -> df_mp2-f12-xg::F1F3bar[MNPQ]
+    Tensor[181] -> df_mp2-f12-xg::F1F3barint[MNPQ]
+    Tensor[182] -> df_mp2-f12-xg::F1T1[MNPQ]
+    Tensor[183] -> df_mp2-f12-xg::F1T2[MNPQ]
+    Tensor[184] -> df_mp2-f12-xg::F1T3[MNPQ]
+    Tensor[185] -> df_mp2-f12-xg::F1[abij]
+    Tensor[186] -> df_mp2-f12-xg::F1[rsij]
+    Tensor[187] -> df_mp2-f12-xg::F1[xJij]
+    Tensor[188] -> df_mp2-f12-xg::F1[xbij]
+    Tensor[189] -> df_mp2-f12-xg::F1[xyij]
+    Tensor[190] -> df_mp2-f12-xg::F1bar[rsij]
+    Tensor[191] -> df_mp2-f12-xg::F1bar[xJij]
+    Tensor[192] -> df_mp2-f12-xg::F1til[xbij]
+    Tensor[193] -> df_mp2-f12-xg::F1til[xyij]
+    Tensor[194] -> df_mp2-f12-xg::F2F2[MNPQ]
+    Tensor[195] -> df_mp2-f12-xg::F2F2[RNPQ]
+    Tensor[196] -> df_mp2-f12-xg::F2F2[rNPQ]
+    Tensor[197] -> df_mp2-f12-xg::F2F2[xNPQ]
+    Tensor[198] -> df_mp2-f12-xg::F2F2bar[MNPQ]
+    Tensor[199] -> df_mp2-f12-xg::F2F2barint[MNPQ]
+    Tensor[200] -> df_mp2-f12-xg::F2F3[MNPQ]
+    Tensor[201] -> df_mp2-f12-xg::F2F3[RNPQ]
+    Tensor[202] -> df_mp2-f12-xg::F2F3[rNPQ]
+    Tensor[203] -> df_mp2-f12-xg::F2F3[xNPQ]
+    Tensor[204] -> df_mp2-f12-xg::F2F3bar[MNPQ]
+    Tensor[205] -> df_mp2-f12-xg::F2F3barint[MNPQ]
+    Tensor[206] -> df_mp2-f12-xg::F2T2[MNPQ]
+    Tensor[207] -> df_mp2-f12-xg::F2T3[MNPQ]
+    Tensor[208] -> df_mp2-f12-xg::F3F3[MNPQ]
+    Tensor[209] -> df_mp2-f12-xg::F3F3[RNPQ]
+    Tensor[210] -> df_mp2-f12-xg::F3F3[rNPQ]
+    Tensor[211] -> df_mp2-f12-xg::F3F3[xNPQ]
+    Tensor[212] -> df_mp2-f12-xg::F3F3bar[MNPQ]
+    Tensor[213] -> df_mp2-f12-xg::F3F3barint[MNPQ]
+    Tensor[214] -> df_mp2-f12-xg::F3T3[MNPQ]
+    Tensor[215] -> df_mp2-f12-xg::FFC[MNPQ]
+    Tensor[216] -> df_mp2-f12-xg::FFC[MNPj]
+    Tensor[217] -> df_mp2-f12-xg::FFC[MNij]
+    Tensor[218] -> df_mp2-f12-xg::FFC[Mnij]
+    Tensor[219] -> df_mp2-f12-xg::FFC[mnij]
+    Tensor[220] -> df_mp2-f12-xg::FF[mnij]
+    Tensor[221] -> df_mp2-f12-xg::FFbarC[MNPQ]
+    Tensor[222] -> df_mp2-f12-xg::FFbarC[MNPj]
+    Tensor[223] -> df_mp2-f12-xg::FFbarC[MNij]
+    Tensor[224] -> df_mp2-f12-xg::FFbarC[Mnij]
+    Tensor[225] -> df_mp2-f12-xg::FFbarC[mnij]
+    Tensor[226] -> df_mp2-f12-xg::FFbar[mnij]
+    Tensor[227] -> df_mp2-f12-xg::FInt[MNF]
+    Tensor[228] -> df_mp2-f12-xg::FInt[RNF]
+    Tensor[229] -> df_mp2-f12-xg::FTC[MNPQ]
+    Tensor[230] -> df_mp2-f12-xg::FTC[MNPj]
+    Tensor[231] -> df_mp2-f12-xg::FTC[MNij]
+    Tensor[232] -> df_mp2-f12-xg::FTC[Mnij]
+    Tensor[233] -> df_mp2-f12-xg::FTC[mnij]
+    Tensor[234] -> df_mp2-f12-xg::FT[mnij]
+    Tensor[235] -> df_mp2-f12-xg::Ff1[MNPQ]
+    Tensor[236] -> df_mp2-f12-xg::Ff1[RNPQ]
+    Tensor[237] -> df_mp2-f12-xg::Ff1[RSPQ]
+    Tensor[238] -> df_mp2-f12-xg::Ff2[MNPQ]
+    Tensor[239] -> df_mp2-f12-xg::Ff2[RNPQ]
+    Tensor[240] -> df_mp2-f12-xg::Ff2[RSPQ]
+    Tensor[241] -> df_mp2-f12-xg::Ff3[MNPQ]
+    Tensor[242] -> df_mp2-f12-xg::Ff3[RNPQ]
+    Tensor[243] -> df_mp2-f12-xg::Ff3[RSPQ]
+    Tensor[244] -> df_mp2-f12-xg::GammaC[K]
+    Tensor[245] -> df_mp2-f12-xg::GammaT[K]
+    Tensor[246] -> df_mp2-f12-xg::Gamma[K]
+    Tensor[247] -> df_mp2-f12-xg::Gamma[MN]
+    Tensor[248] -> df_mp2-f12-xg::Har[MM]
+    Tensor[249] -> df_mp2-f12-xg::Har[Mr]
+    Tensor[250] -> df_mp2-f12-xg::Har[Mx]
+    Tensor[251] -> df_mp2-f12-xg::Har[RM]
+    Tensor[252] -> df_mp2-f12-xg::Har[RR]
+    Tensor[253] -> df_mp2-f12-xg::Har[ij]
+    Tensor[254] -> df_mp2-f12-xg::Har[rI]
+    Tensor[255] -> df_mp2-f12-xg::Har[ri]
+    Tensor[256] -> df_mp2-f12-xg::Har[rs]
+    Tensor[257] -> df_mp2-f12-xg::Har[xI]
+    Tensor[258] -> df_mp2-f12-xg::Har[xb]
+    Tensor[259] -> df_mp2-f12-xg::Har[xi]
+    Tensor[260] -> df_mp2-f12-xg::Har[xs]
+    Tensor[261] -> df_mp2-f12-xg::Har[xy]
+    Tensor[262] -> df_mp2-f12-xg::ItmM[MI]
+    Tensor[263] -> df_mp2-f12-xg::ItmM[Mi]
+    Tensor[264] -> df_mp2-f12-xg::ItmM[Mr]
+    Tensor[265] -> df_mp2-f12-xg::ItmM[Mx]
+    Tensor[266] -> df_mp2-f12-xg::ItmM[RI]
+    Tensor[267] -> df_mp2-f12-xg::ItmM[Ri]
+    Tensor[268] -> df_mp2-f12-xg::ItmM[Rr]
+    Tensor[269] -> df_mp2-f12-xg::ItmM[Rx]
+    Tensor[270] -> df_mp2-f12-xg::ItmN[Ma]
+    Tensor[271] -> df_mp2-f12-xg::ItmN[Mx]
+    Tensor[272] -> df_mp2-f12-xg::ItmN[Ra]
+    Tensor[273] -> df_mp2-f12-xg::ItmN[Rx]
+    Tensor[274] -> df_mp2-f12-xg::Jinv[FF]
+    Tensor[275] -> df_mp2-f12-xg::Jmh[FF]
+    Tensor[276] -> df_mp2-f12-xg::Jmh[KK]
+    Tensor[277] -> df_mp2-f12-xg::K1[rsij]
+    Tensor[278] -> df_mp2-f12-xg::K1[xJij]
+    Tensor[279] -> df_mp2-f12-xg::K:eecc
+    Tensor[280] -> df_mp2-f12-xg::KFC[MNPQ]
+    Tensor[281] -> df_mp2-f12-xg::KFC[MNPj]
+    Tensor[282] -> df_mp2-f12-xg::KFC[MNij]
+    Tensor[283] -> df_mp2-f12-xg::KFC[Mnij]
+    Tensor[284] -> df_mp2-f12-xg::KFC[mnij]
+    Tensor[285] -> df_mp2-f12-xg::KF[mnij]
+    Tensor[286] -> df_mp2-f12-xg::KFf1[MNPQ]
+    Tensor[287] -> df_mp2-f12-xg::KFf2[MNPQ]
+    Tensor[288] -> df_mp2-f12-xg::KFf3[MNPQ]
+    Tensor[289] -> df_mp2-f12-xg::RF[mnij]
+    Tensor[290] -> df_mp2-f12-xg::TF12[aaii]
+    Tensor[291] -> df_mp2-f12-xg::TF[mnij]
+    Tensor[292] -> df_mp2-f12-xg::Tmp[mnij]
+    Tensor[293] -> df_mp2-f12-xg::VF[mnij]
+    Tensor[294] -> df_mp2-f12-xg::XF[mnij]
+    Tensor[295] -> df_mp2-f12-xg::f[MM]
+    Tensor[296] -> df_mp2-f12-xg::f[RM]
+    Tensor[297] -> df_mp2-f12-xg::f[RR]
+    Tensor[298] -> df_mp2-f12-xg::f[ab]
+    Tensor[299] -> df_mp2-f12-xg::f[rI]
+    Tensor[300] -> df_mp2-f12-xg::f[ri]
+    Tensor[301] -> df_mp2-f12-xg::f[rs]
+    Tensor[302] -> df_mp2-f12-xg::f[xI]
+    Tensor[303] -> df_mp2-f12-xg::f[xb]
+    Tensor[304] -> df_mp2-f12-xg::f[xi]
+    Tensor[305] -> df_mp2-f12-xg::f[xs]
+    Tensor[306] -> df_mp2-f12-xg::f[xy]
+    Tensor[307] -> (F|F12|F)
+    Tensor[308] -> (AA|F12|F)
+    Tensor[309] -> (RA|F12|F)
+    Tensor[310] -> (F|F12|F)
+    Tensor[311] -> (AA|F12|F)
+    Tensor[312] -> (RA|F12|F)
+    Tensor[313] -> (F|F12|F)
+    Tensor[314] -> (AA|F12|F)
+    Tensor[315] -> (RA|F12|F)
+    Tensor[316] -> (F|[[Del,F],F]|F)
+    Tensor[317] -> (AA|[[Del,F],F]|F)
+    Tensor[318] -> (AR|[[Del,F],F]|F)
+    Tensor[319] -> (F|[[Del,F1],F2]|F)
+    Tensor[320] -> (AA|[[Del,F1],F2]|F)
+    Tensor[321] -> (AR|[[Del,F1],F2]|F)
+    Tensor[322] -> (F|[[Del,F1],F2]|F)
+    Tensor[323] -> (AA|[[Del,F1],F2]|F)
+    Tensor[324] -> (AR|[[Del,F1],F2]|F)
+    Tensor[325] -> (F|F12|F)
+    Tensor[326] -> (AA|F12|F)
+    Tensor[327] -> (AR|F12|F)
+    Tensor[328] -> (RA|F12|F)
+    Tensor[329] -> (F|F12|F)
+    Tensor[330] -> (AA|F12|F)
+    Tensor[331] -> (RA|F12|F)
+    Tensor[332] -> (F|F12|F)
+    Tensor[333] -> (AA|F12|F)
+    Tensor[334] -> (RA|F12|F)
+    Tensor[335] -> (F|[[Del,F],F]|F)
+    Tensor[336] -> (AA|[[Del,F],F]|F)
+    Tensor[337] -> (AR|[[Del,F],F]|F)
+    Tensor[338] -> (F|[[Del,F1],F2]|F)
+    Tensor[339] -> (AA|[[Del,F1],F2]|F)
+    Tensor[340] -> (AR|[[Del,F1],F2]|F)
+    Tensor[341] -> (F|F12|F)
+    Tensor[342] -> (AA|F12|F)
+    Tensor[343] -> (AR|F12|F)
+    Tensor[344] -> (RA|F12|F)
+    Tensor[345] -> (F|F12|F)
+    Tensor[346] -> (AA|F12|F)
+    Tensor[347] -> (RA|F12|F)
+    Tensor[348] -> (F|[[Del,F],F]|F)
+    Tensor[349] -> (AA|[[Del,F],F]|F)
+    Tensor[350] -> (AR|[[Del,F],F]|F)
+    Tensor[351] -> (F|F12|F)
+    Tensor[352] -> (AA|F12|F)
+    Tensor[353] -> (AR|F12|F)
+    Tensor[354] -> (RA|F12|F)
+    Tensor[355] -> (F|r^-1|F)
+    Tensor[356] -> (K|r^-1|K)
+    Tensor[357] -> (AA|r^-1|F)
+    Tensor[358] -> (AA|r^-1|K)
+    Tensor[359] -> (AR|r^-1|K)
+    Tensor[360] -> (AR|r^-1|F)
+    Tensor[361] -> (RA|r^-1|F)
+    Tensor[362] -> (RR|r^-1|K)
+    Tensor[363] -> (F|F12/r|F)
+    Tensor[364] -> (AA|F12/r|F)
+    Tensor[365] -> (F|F12/r|F)
+    Tensor[366] -> (AA|F12/r|F)
+    Tensor[367] -> (F|F12/r|F)
+    Tensor[368] -> (AA|F12/r|F)
+    Tensor[369] -> df_mp2-f12-xg::j[MM]
+    Tensor[370] -> df_mp2-f12-xg::j[RM]
+    Tensor[371] -> df_mp2-f12-xg::j[RR]
+    Tensor[372] -> df_mp2-f12-xg::k[MM]
+    Tensor[373] -> df_mp2-f12-xg::k[RM]
+    Tensor[374] -> df_mp2-f12-xg::k[RR]
+    Tensor[375] -> df_mp2-f12-xg::n[rI]
+    Tensor[376] -> df_mp2-f12-xg::n[ra]
+    Tensor[377] -> df_mp2-f12-xg::n[ri]
+    Tensor[378] -> df_mp2-f12-xg::n[rs]
+    Tensor[379] -> df_mp2-f12-xg::n[xI]
+    Tensor[380] -> df_mp2-f12-xg::n[xa]
+    Tensor[381] -> df_mp2-f12-xg::n[xi]
+    Tensor[382] -> df_mp2-f12-xg::n[xs]
+    Tensor[383] -> df_mp2-f12-xg::n[xy]
+    Tensor[384] -> df_mp2-f12-xg::x[Ma]
+    Tensor[385] -> df_mp2-f12-xg::x[Mi]
+    Tensor[386] -> df_mp2-f12-xg::x[Mr]
+    Tensor[387] -> df_mp2-f12-xg::x[Mx]
+    Tensor[388] -> df_mp2-f12-xg::x[Rr]
+    Tensor[389] -> df_mp2-f12-xg::x[Rx]
+ Executing Algorithm: f12xg_make_Ffi_intermmediates
+ Load/Alloc: iSymbol=30 [(1.0)]  nSymbols=1
+ FDiskTensor: load df_mp2-f12-xg::CJ[MNF] range [0,3)x[0,3)x[0,8)  (nSeq = 1)
+    FDiskTensor: load        0 (sz 4292352)
+ Load/Alloc: iSymbol=57 [df_mp2-f12-xg::CJ[MNF]]  nSymbols=2
+ Load/Alloc: iSymbol=235 [df_mp2-f12-xg::Ff1[MNPQ]]  nSymbols=3
+ Load/Alloc: iSymbol=326 [(AA|F12|F)]  nSymbols=4
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [(AA|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff1[MNPQ][0,0,0,0] memory: 66442 kb
+ Load/Alloc: iSymbol=325 [(F|F12|F)]  nSymbols=4
+ Load/Alloc: iSymbol=227 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -4] (1.0)[]                        memory: 0 kb
+   [ -3] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -2] df_mp2-f12-xg::Ff1[MNPQ][0,0,0,0] memory: 66442 kb
+   [ -1] (F|F12|F)[0,0]                 memory: 156 kb
+ Store/Drop: iSymbol=-1 [(F|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff1[MNPQ][0,0,0,0] memory: 66442 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Ff1[MNPQ]]  nSymbols=3
+ FDiskTensor: store df_mp2-f12-xg::Ff1[MNPQ] range [0,3)x[0,3)x[0,3)x[0,3)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 68024448)
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -2] (1.0)[]                        memory: 0 kb
+   [ -1] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+ Load/Alloc: iSymbol=238 [df_mp2-f12-xg::Ff2[MNPQ]]  nSymbols=3
+ Load/Alloc: iSymbol=342 [(AA|F12|F)]  nSymbols=4
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [(AA|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff2[MNPQ][0,0,0,0] memory: 66442 kb
+ Load/Alloc: iSymbol=341 [(F|F12|F)]  nSymbols=4
+ Load/Alloc: iSymbol=227 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -4] (1.0)[]                        memory: 0 kb
+   [ -3] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -2] df_mp2-f12-xg::Ff2[MNPQ][0,0,0,0] memory: 66442 kb
+   [ -1] (F|F12|F)[0,0]                 memory: 156 kb
+ Store/Drop: iSymbol=-1 [(F|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff2[MNPQ][0,0,0,0] memory: 66442 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Ff2[MNPQ]]  nSymbols=3
+ FDiskTensor: store df_mp2-f12-xg::Ff2[MNPQ] range [0,3)x[0,3)x[0,3)x[0,3)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 68024448)
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -2] (1.0)[]                        memory: 0 kb
+   [ -1] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+ Load/Alloc: iSymbol=241 [df_mp2-f12-xg::Ff3[MNPQ]]  nSymbols=3
+ Load/Alloc: iSymbol=352 [(AA|F12|F)]  nSymbols=4
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-3} {-1} { De:0314 Co:22 } { IB: {-3}:[0,0,0] {-1}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Contract  {-2} += 1 * {-1} {-3} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-3}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [(AA|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff3[MNPQ][0,0,0,0] memory: 66442 kb
+ Load/Alloc: iSymbol=351 [(F|F12|F)]  nSymbols=4
+ Load/Alloc: iSymbol=227 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-1} += 1 * {-4} {-2} { De:014 Co:20 } { IB: {-4}:[0,0,0] {-2}:[0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Contract  {-3} += -1 * {-1} {-4} { De:0314 Co:22 } { IB: {-1}:[0,0,0] {-4}:[0,0,0] }
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::FInt[MNF]]  nSymbols=5
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -4] (1.0)[]                        memory: 0 kb
+   [ -3] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -2] df_mp2-f12-xg::Ff3[MNPQ][0,0,0,0] memory: 66442 kb
+   [ -1] (F|F12|F)[0,0]                 memory: 156 kb
+ Store/Drop: iSymbol=-1 [(F|F12|F)]  nSymbols=4
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -3] (1.0)[]                        memory: 0 kb
+   [ -2] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+   [ -1] df_mp2-f12-xg::Ff3[MNPQ][0,0,0,0] memory: 66442 kb
+ Store/Drop: iSymbol=-1 [df_mp2-f12-xg::Ff3[MNPQ]]  nSymbols=3
+ FDiskTensor: store df_mp2-f12-xg::Ff3[MNPQ] range [0,3)x[0,3)x[0,3)x[0,3)  (nSeq = 1)
+    FDiskTensor: store       0 (sz 68024448)
+ VM state iterator stack:
+   [ -1] (filler - may not be referenced)
+ VM state symbol stack:
+   [ -2] (1.0)[]                        memory: 0 kb
+   [ -1] df_mp2-f12-xg::CJ[MNF][0,0,0]  memory: 4202 kb
+ FDiskTensor: load df_mp2-f12-xg::CJ[RNF] range [0,9)x[0,3)x[0,8)  (nSeq = 1)
+    FDiskTensor: load        0 (sz 19077120)
+ Load/Alloc: iSymbol=58 [df_mp2-f12-xg::CJ[RNF]]  nSymbols=3
+ Load/Alloc: iSymbol=328 [(RA|F12|F)]  nSymbols=4
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Memory manager status, default implementation STACK
+ Heap status:    39 entries, memory used=1040 doubles
+                           Type               Address    Size  Rank Bounds
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                           double            360E0EC0      16     1  1:16
+                           double            360E0E30      16     1  1:16
+                           double            360E0DA0      16     1  1:16
+                           double            360E0D10      16     1  1:16
+                           double            360E0C80      16     1  1:16
+                           double            360E0BF0      16     1  1:16
+                           integer           34E21E40      32     1  1:32
+                           integer           361C1B50      32     1  1:32
+                           integer           361C1FD0      16     1  1:16
+                           integer           361DA360      16     1  1:16
+                           integer           361DA2D0      16     1  1:16
+                           integer           361DA240      16     1  1:16
+                           integer           361DA1B0      16     1  1:16
+                           integer           361DA120      16     1  1:16
+                           integer           361DA090      16     1  1:16
+                           integer           361DA000      16     1  1:16
+                           integer           361D9F70      16     1  1:16
+                           integer           361D9EE0      16     1  1:16
+                           integer           361D9E50      16     1  1:16
+                           integer           361D9DC0      16     1  1:16
+                           integer           361D9D30      16     1  1:16
+                           integer           361D9CA0      16     1  1:16
+                           integer           361D9C10      16     1  1:16
+                           integer           361D9B80      16     1  1:16
+                           integer           361D9AF0      16     1  1:16
+                           integer           361D9A60      16     1  1:16
+                           integer           361D99D0      16     1  1:16
+                           integer           361D9940      16     1  1:16
+                           integer           361D98B0      16     1  1:16
+                           integer           360DCB40      16     1  1:16
+                           integer           351F95D0      16     1  1:16
+                           integer           351F7F50      16     1  1:16
+                           integer           3532EB30      16     1  1:16
+                           integer           361D9620      80     2  1:5  1:16
+                           integer           361D9390      80     2  1:5  1:16
+                           integer           360DC8B0      80     2  1:5  1:16
+                           integer           360DC620      80     2  1:5  1:16
+                           integer           361C1D40      80     2  1:5  1:16
+                           integer           35086BF0      80     2  1:5  1:16
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ Stack status: Remaining memory=26679777 doubles (5320223 currently used, 32000000 maximum used), Entries=22
+                           Type            Depth            Address          Size  Rank Bounds
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                          double               3       14A8F2F0A0F0             3     1  1:3
+                          double            4620       14A8F2F010A8          4617     1  1:4617
+                          double            4651       14A8F2F00FB0            31     1  1:31
+                          double         2389291       14A8F1CCF7B0       2384640     1  1:2384640
+                          double         2389294       14A8F1CCF798             3     1  1:3
+                          double         2393398       14A8F1CC7758          4104     1  1:4104
+                          double         2393429       14A8F1CC7660            31     1  1:31
+                          double         4778069       14A8F0A95E60       2384640     1  1:2384640
+                          double         4778072       14A8F0A95E48             3     1  1:3
+                          double         4782176       14A8F0A8DE08          4104     1  1:4104
+                          double         4782207       14A8F0A8DD10            31     1  1:31
+                          double         5318751       14A8F0675E10        536544     1  1:536544
+                          double         5318754       14A8F0675DF8             3     1  1:3
+                          double         5320122       14A8F0673338          1368     1  1:1368
+                          double         5320153       14A8F0673240            31     1  1:31
+                          double         5320154       14A8F0673238             1     1  1:1
+                          double         5320157       14A8F0673220             3     1  1:3
+                          double         5320176       14A8F0673188            19     1  1:19
+                          double         5320207       14A8F0673090            31     1  1:31
+                          double         5320208       14A8F0673088             1     1  1:1
+                          double         5320209       14A8F0673080             1     1  1:1
+                          integer        5320223       14A8F0673010            14     1  1:14
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+ ? Error
+ ? Insufficient memory to allocate a new array of length 37791360 8-byte words
+ ? The problem occurs in memory
+
+ GLOBAL ERROR fehler on processor   0                                         
