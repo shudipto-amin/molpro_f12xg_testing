@@ -1,0 +1,16 @@
+memory,2000,m
+gprint,orbitals
+
+geometry={
+  angstrom;
+  he;
+  kr, na, 99999;
+}
+
+basis=aug-cc-pVTZ
+
+
+    {df-hf}
+    {df-mp2}
+    {df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-F12',ANSATZ=3C(FIX,HY1,NOZ)}
+    
