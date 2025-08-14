@@ -6,7 +6,8 @@ parser = ap.ArgumentParser(
         description = """
         This script takes an input template and generates xg, standard, and default scripts 
         from it.
-        """
+        """,
+        formatter_class=ap.ArgumentDefaultsHelpFormatter
         )
 
 parser.add_argument(
@@ -96,7 +97,7 @@ if __name__ == "__main__":
         
         print(input_script)
 
-    sys.exit()
-    with open(fname, 'w') as out:
-        out.write(input_script)
+    #sys.exit()
+        with open(fname, 'w') as out:
+            out.write(input_script)
 

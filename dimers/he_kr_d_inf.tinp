@@ -1,0 +1,10 @@
+memory,2000,m
+gprint,orbitals
+
+geometry={
+  angstrom;
+  he;
+  kr, na, 99999;
+}
+
+basis=aug-cc-pVTZ

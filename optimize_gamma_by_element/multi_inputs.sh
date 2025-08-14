@@ -1,7 +1,7 @@
 #!/bin/bash
 
 bases=("cc-pvtz" "aug-cc-pvtz" "awcvtz")
-atoms=("n" "o" "f" "ne" "na" "mg" "s" "cl" "ar" "cu" "zn")
+atoms=("he" "kr")
 
 for atom in ${atoms[@]}; do
     for basis in ${bases[@]}; do
