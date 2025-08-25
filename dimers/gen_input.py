@@ -44,21 +44,21 @@ def get_from_template(inpfile):
 
     {{df-hf}}
     {{df-mp2}}
-    {{df-mp2-f12,gem_basis=mygem,ANSATZ={ansatz}}}
+    {{df-mp2-f12,gem_basis=[1.3],ANSATZ={ansatz}}}
     """
 
     template['standard'] = """
 
     {{df-hf}}
     {{df-mp2}}
-    {{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-F12',ANSATZ={ansatz}}}
+    {{df-mp2-f12,gem_basis=[1.3],cpp_prog='DF-MP2-F12',ANSATZ={ansatz}}}
     """
 
     template['xg'] = """
 
     {{df-hf}}
     {{df-mp2}}
-    {{df-mp2-f12,gem_basis=mygem,cpp_prog='DF-MP2-XG',ANSATZ={expfile}}}
+    {{df-mp2-f12,gem_basis=[1.3],cpp_prog='DF-MP2-XG',ANSATZ={expfile}}}
     """
     return template
 

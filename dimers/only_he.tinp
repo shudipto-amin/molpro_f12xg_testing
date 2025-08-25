@@ -4,7 +4,6 @@ gprint,orbitals
 geometry={
   angstrom;
   he;
-  kr, he, 99999;
 }
 
 basis=aug-cc-pVTZ
