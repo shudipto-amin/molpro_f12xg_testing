@@ -1,0 +1,12 @@
+memory,5000,m
+gprint,orbitals
+
+geometry={Ne}
+basis={
+  default,aug-cc-pVDZ
+}                                                        
+
+
+{df-hf}
+{df-mp2}
+{df-mp2-f12,gem_beta=1.3,cpp_prog='DF-MP2-F12'} 

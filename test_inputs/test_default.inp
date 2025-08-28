@@ -1,4 +1,4 @@
-memory,200,m
+memory,5000,m
 gprint,orbitals
 
 geometry={Ne}
