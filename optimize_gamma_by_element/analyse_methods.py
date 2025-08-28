@@ -3,7 +3,11 @@ import pandas as pd
 
 def get_evsgamma(atom, basis, charge=0, names=None):
     fname = f"outputs/table_{atom}_{charge}_{basis}.csv"
-    data = pd.read_csv(fname, names=names, skipinitialspace=True)
+    try:
+        data = pd.read_csv(fname, names=names, skipinitialspace=True)
+    except FileNotFoundError:
+        print(f"{fname} not found")
+        return None
     return data
 
 def get_min(data):
