@@ -1,4 +1,3 @@
-memory,200,m
 gprint,orbitals
 
 geometry={

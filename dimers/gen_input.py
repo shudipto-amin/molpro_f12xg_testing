@@ -1,6 +1,27 @@
 import os
 import sys
 import argparse as ap
+import textwrap
+
+def existing_file(path):
+    """Check that a path is an existing file, and return absolute path of it."""
+    if not os.path.isfile(path):
+        raise argparse.ArgumentTypeError(f"File not found: {path}")
+    return os.path.abspath(path)  # also convert to absolute
+
+def gamma_type(value, template):
+    try:
+        fval = float(value)
+        return f"[{fval}]"
+    except ValueError:
+        pass
+
+    if value in template["common"]:
+        return value
+    else:
+        raise argparse.ArgumentTypeError(
+            f"Invalid gamma '{value}'. Must be a float or one of: {template['common']}"
+        )
 
 parser = ap.ArgumentParser(
         description = """
@@ -9,17 +30,20 @@ parser = ap.ArgumentParser(
         """,
         formatter_class=ap.ArgumentDefaultsHelpFormatter
         )
-
 parser.add_argument(
-        '-i', '--input', default='template.tinp',
+        '-i', '--input', 
+        required=True,
         help = 'template input file',
         )
+
 parser.add_argument(
         '-a', '--ansatz', default='3C(FIX,HY1,NOZ)',
         help = 'ansatz for both std and default'
         )
 parser.add_argument(
-        '-e', '--expfile', default='/home/linux3_i1/amin/f12xg_inputs/expfile_all_same.txt',
+        '-e', '--expfile', 
+        default='/home/linux3_i1/amin/f12xg_inputs/expfile_all_same.txt',
+        type=existing_file,
         help = 'expfile for xg'
         )
 parser.add_argument(
@@ -28,39 +52,55 @@ parser.add_argument(
         )
 
 parser.add_argument(
+    "-g", "--gamma",
+    default=1.3,   # will be passed to gamma_type too
+    help="gamma value: [], or string that must exist in template['common']"
+    )
+
+parser.add_argument(
         '-o', '--outdir', default='outputs/',
         help='folder where generated input files will be saved.'
         )
 
+parser.add_argument(
+        '--test', 
+        action="store_true",
+        help="test the script and print out only"
+        )
 
-def get_from_template(inpfile):
+def get_from_template(inpfile):        
+    template = dict()                             
+    
+    with open(inpfile, 'r') as inp:               
+        template['common'] = inp.read()           
+    
+    template['default'] = textwrap.dedent("""\
+        {{df-hf}}
+        {{df-mp2}}
+        {{df-mp2-f12,gem_beta={gamma},ANSATZ={ansatz}}}
+    """)
 
-    template = dict()
+    template['standard'] = textwrap.dedent("""\
+        {{df-hf}}
+        {{df-mp2}}
+        {{df-mp2-f12,gem_beta={gamma},cpp_prog='DF-MP2-F12'}}
+    """)
 
-    with open(inpfile, 'r') as inp:
-        template['common'] = inp.read()
-
-    template['default'] = """
-
-    {{df-hf}}
-    {{df-mp2}}
-    {{df-mp2-f12,gem_basis=[1.3],ANSATZ={ansatz}}}
-    """
-
-    template['standard'] = """
-
-    {{df-hf}}
-    {{df-mp2}}
-    {{df-mp2-f12,gem_basis=[1.3],cpp_prog='DF-MP2-F12',ANSATZ={ansatz}}}
-    """
-
-    template['xg'] = """
-
-    {{df-hf}}
-    {{df-mp2}}
-    {{df-mp2-f12,gem_basis=[1.3],cpp_prog='DF-MP2-XG',ANSATZ={expfile}}}
-    """
+    template['xg'] = textwrap.dedent("""\
+        {{df-hf}}
+        {{df-mp2}}
+        {{df-mp2-f12,cpp_prog='DF-MP2-XG',ANSATZ={expfile}}}
+    """)
+    
     return template
+
+def gen_header(std_mem, temp_key):
+    '''Generate header for input file using standard memory'''
+    if temp_key == 'xg':
+        mem = 10 * std_mem
+    else:
+        mem = std_mem
+    return f"memory,{mem},m\n"
 
 def generate_fname(temp_key, args):
     inpfname = args.input.rstrip('.tinp')
@@ -75,29 +115,32 @@ def generate_fname(temp_key, args):
     return fname
     
 def generate_input(template, temp_key, args):
-    input_script = template['common'] + \
+    input_script = gen_header(500, temp_key) + \
+    template['common'] + \
     template[temp_key].format(**args.__dict__)         
     if args.ansatz == 'default':
         input_script.replace(",ANSATZ=default", "")
 
     return input_script
         
-if __name__ == "__main__":
-    args = parser.parse_args() 
-    print(args.__dict__)
-    template = get_from_template(args.input)
 
-        
+if __name__ == "__main__":
+    
+    args = parser.parse_args()
+    template = get_from_template(args.input)
+    
+    args.gamma = gamma_type(args.gamma, template)
+
+
     for key in template:
         if key in ('common'): continue
-        print("="*50)
         fname = generate_fname(key, args)
-        print(fname)
         input_script = generate_input(template, key, args)
-        
-        print(input_script)
-
-    #sys.exit()
-        with open(fname, 'w') as out:
-            out.write(input_script)
+        if args.test: 
+            print("="*50)
+            print(fname)
+            print(input_script)
+        else:    
+            with open(fname, 'w') as out:
+                out.write(input_script)
 
