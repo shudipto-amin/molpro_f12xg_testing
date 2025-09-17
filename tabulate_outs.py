@@ -27,14 +27,31 @@ parser.add_argument('--xgouts', '-x', nargs='+',
 def ener_not_found_error(outfile):
     print(f"No energy found! Output file: {outfile}")
 
+def get_xg_energy_lines(outfile):
+    start_marker = "Printing Energies step by step"
+    end_marker = "F12-XG CALCULATIONS END"
+    printing = False
+    last_line = None
+    output_lines = []
+    with open(outfile, "r") as f:
+        for line in f:
+            last_line = line
+            if start_marker in line:
+                printing = True
+            if printing:
+                output_lines.append(line)
+            if printing and end_marker in line:
+                printing = False
+    output_lines.append(last_line)
+    return "".join(output_lines)
+
+
 def get_ener(outfile, method='MP2-F12', out_type="std"):
     if out_type == "std":
         ener = xop.get_xmlener(outfile) 
         return ener            
     if out_type == "xg":
-        out = sp.check_output(f"./get_xg_energy.sh {outfile}".split())
-    
-        out = out.decode('UTF-8')
+        out = get_xg_energy_lines(outfile)
         if 'Molpro calculation terminated' not in out:
             ener_not_found_error(outfile)
             return None

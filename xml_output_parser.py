@@ -40,7 +40,13 @@ def get_xmlener(xmlfile, verbose=False):
     tree = get_clean_tree(xmlfile)
     root = tree.getroot()
     energy_elems = root.findall(".//property/[@name='total energy']")
-    mp2_node, = find_by_attrib(energy_elems, 'method', '^MP2-F12')
+    try:
+        mp2_node, = find_by_attrib(energy_elems, 'method', '^MP2-F12')
+    except ValueError as e:
+        print("ERROR READING ENERGY =============================")
+        print(f"{xmlfile} does not have any '^MP2-F12' method")
+        print("==================================================")
+        raise(e)
     ener = mp2_node.attrib['value']
     method = mp2_node.attrib['method']
     name = mp2_node.attrib['name']
@@ -48,3 +54,4 @@ def get_xmlener(xmlfile, verbose=False):
         print(f"{method} {name}: {ener}")
 
     return float(ener)
+
