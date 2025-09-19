@@ -65,7 +65,8 @@ def parse_output_to_df(output_str: str) -> pd.DataFrame:
     # Step 3: Build final DataFrame
     final_df = pd.DataFrame({
         "DISTANCES": distances,
-        "E": df['energies'].astype(np.float64)
+        "Etot": df['total_energies'].astype(np.float64),
+        "Ecorr": df['correlation_energies'].astype(np.float64)
     })
 
     return final_df

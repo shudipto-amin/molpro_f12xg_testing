@@ -46,9 +46,9 @@ def get_xg_energy_lines(outfile):
     return "".join(output_lines)
 
 
-def get_ener(outfile, method='MP2-F12', out_type="std"):
+def get_ener(outfile, name='total energy', method='MP2-F12', out_type="std"):
     if out_type == "std":
-        ener = xop.get_xmlener(outfile) 
+        ener = xop.get_xmlener(outfile, name=name) 
         return ener            
     if out_type == "xg":
         out = get_xg_energy_lines(outfile)
@@ -58,7 +58,7 @@ def get_ener(outfile, method='MP2-F12', out_type="std"):
 
         lines = out.split('\n')
         for line in lines[-1::-1]:
-            if f'!{method}' in line and 'total energy' in line:
+            if f'{method}' in line and name in line:
                 energy = float(line.split()[-1])
                 return energy
         ener_not_found_error(outfile)
@@ -72,24 +72,30 @@ if __name__ == "__main__":
     #print(sys.argv)
     data = dict(
         labels = [],
-        energies = [],
+        total_energies = [],
+        correlation_energies = []
     )
-    def update(outfile, energy):
-        data['energies'].append(energy)
+    def update(outfile, total_energy, correlation_energy):
+        data['total_energies'].append(total_energy)
+        data['correlation_energies'].append(correlation_energy)
         data['labels'].append(
                 os.path.basename(outfile).rstrip('.out')
                 )
+        
     if len(sys.argv) <= 1:
         print("At least one output file must be provided\n")
         parser.print_help()
         sys.exit(1)
     if args.outs:
         for outfile in args.outs:
-            energy = get_ener(outfile)
-            update(outfile, energy)
+            total_energy = get_ener(outfile, name='total energy')
+            correlation_energy = get_ener(outfile, name='correlation energy')
+            update(outfile, total_energy, correlation_energy)
     if args.xgouts:
         for outfile in args.xgouts:
-            energy = get_ener(outfile, out_type="xg")
-            update(outfile, energy)
+            total_energy = get_ener(outfile, name='total energy', out_type='xg')
+            correlation_energy = get_ener(
+                outfile, name='correlation energy', out_type='xg')
+            update(outfile, total_energy, correlation_energy)
     df = pd.DataFrame(data)
     print(df.to_string())
